@@ -1,0 +1,36 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/myportal",
+      "destination": "https://app.urwellness.co/myportal",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "urwellness.co" }],
+      "destination": "https://www.urwellness.co/:path",
+      "permanent": true
+    },
+    {
+      "source": "/book",
+      "destination": "https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5",
+      "permanent": true
+    },
+    {
+      "source": "/book-clarity",
+      "destination": "https://book.prospyrmed.com/46924812-63ac-49e1-9dba-f22e510ae749",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About THE WELLNESS CO. | Dawn Philp, FNP | Mother-Daughter Practice | Santee</title>
+  <meta name="description" content="THE WELLNESS CO. was founded by Dawn Philp, FNP in 2002 and her daughter Jennifer. Over 20 years of integrative and functional medicine in Santee, San Diego. Call (619) 444-3264.">
+  <link rel="canonical" href="https://urwellness.co/about">
+  <meta property="og:title" content="About THE WELLNESS CO. | Mother-Daughter Practice in Santee">
+  <meta property="og:description" content="Founded by Dawn Philp, FNP and her daughter Jennifer. Over 20 years of integrative and functional medicine in Santee, San Diego.">
+  <meta property="og:url" content="https://urwellness.co/about">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* About page-specific styles */
+
+    /* Origin story two-column */
+    .origin-section {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .origin-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .origin-photo {
+      background: linear-gradient(135deg, var(--cream), var(--cream-dark));
+      aspect-ratio: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      overflow: hidden;
+    }
+    .origin-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .origin-content h2 {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 32px;
+    }
+    .origin-content h2 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .origin-content p {
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin-bottom: 20px;
+    }
+
+    /* Team section */
+    .team-section {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+    .team-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .team-header h2 {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+    .team-header h2 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .team-card {
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.04);
+      padding: 48px 40px;
+      transition: box-shadow 0.3s;
+    }
+    .team-card:hover {
+      box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+    }
+    .team-card-photo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--cream), var(--cream-dark));
+      border-radius: 50%;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 10px;
+      overflow: hidden;
+    }
+    .team-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .team-card h3 {
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+    .team-card-role {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    .team-card p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .credentials-bar {
+      text-align: center;
+      margin-top: 56px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .credentials-bar span {
+      margin: 0 12px;
+      color: rgba(0,0,0,0.15);
+    }
+
+    /* Values / What We Believe */
+    .values-section {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .values-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .values-header h2 {
+      font-size: 42px;
+    }
+    .values-header h2 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .value-card {
+      padding: 40px;
+      border: 1px solid rgba(0,0,0,0.06);
+      transition: box-shadow 0.3s;
+    }
+    .value-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.05);
+    }
+    .value-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .value-card p {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+
+    /* CLARITY callout dark section */
+    .about-clarity-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #1A1816, #2D2A26);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-clarity-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+    }
+    .about-clarity-section .eyebrow {
+      color: var(--gold-light);
+    }
+    .about-clarity-section h2 {
+      font-size: 42px;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .about-clarity-section h2 em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+    .about-clarity-section p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    @media (max-width: 768px) {
+      .origin-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .origin-photo {
+        aspect-ratio: 16/10;
+      }
+      .origin-content h2 {
+        font-size: 30px;
+      }
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .team-card {
+        padding: 32px 24px;
+      }
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .value-card {
+        padding: 32px 24px;
+      }
+      .credentials-bar {
+        font-size: 10px;
+        letter-spacing: 1px;
+      }
+      .credentials-bar span {
+        display: block;
+        margin: 8px 0;
+      }
+      .about-clarity-section h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+
+  <!-- Person Schema for Dawn Philp -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dawn Philp",
+    "jobTitle": "Family Nurse Practitioner",
+    "description": "Founder and lead provider at THE WELLNESS CO. Board-certified Family Nurse Practitioner with over 20 years of experience in integrative and functional medicine.",
+    "worksFor": {
+      "@type": "LocalBusiness",
+      "name": "THE WELLNESS CO.",
+      "url": "https://urwellness.co",
+      "telephone": "+1-619-444-3264",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9658 Mission Gorge Rd",
+        "addressLocality": "Santee",
+        "addressRegion": "CA",
+        "postalCode": "92071",
+        "addressCountry": "US"
+      }
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Board Certification",
+        "name": "Family Nurse Practitioner"
+      }
+    ],
+    "knowsAbout": [
+      "Integrative Medicine",
+      "Functional Medicine",
+      "Hormone Optimization",
+      "Biomarker Analysis",
+      "Peptide Therapy"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col">
+            <div class="nav-mega-heading">Featured</div>
+            <a href="/services/softwave-therapy">SoftWave Therapy</a>
+            <a href="/services/iv-therapy">IV Therapy</a>
+            <a href="/services/peptide-therapy">Peptide Therapy</a>
+            <a href="/services/vitamin-injections">Vitamin Injections</a>
+          </div>
+          <div class="nav-mega-col">
+            <div class="nav-mega-heading">Aesthetics</div>
+            <a href="/services/aesthetics">All Aesthetics</a>
+            <a href="/services/aesthetics/botox">Botox & Dysport</a>
+            <a href="/services/aesthetics/morpheus8">Morpheus8</a>
+            <a href="/services/aesthetics/fillers">Dermal Fillers</a>
+          </div>
+          <div class="nav-mega-col">
+            <div class="nav-mega-heading">More</div>
+            <a href="/services/weight-management">Weight Management</a>
+            <a href="/services/body-contouring">Body Contouring</a>
+            <a href="/services">View All Services</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown">
+          <a href="/clarity">The Program</a>
+          <a href="/clarity/how-it-works">How It Works</a>
+          <a href="/clarity/for-her">For Women</a>
+          <a href="/clarity/for-him">For Men</a>
+          <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a>
+          <a href="/clarity/faq">FAQ</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/conditions">Conditions</a>
+        <div class="nav-dropdown">
+          <a href="/conditions/hormone-imbalance">Hormone Imbalance</a>
+          <a href="/conditions/low-testosterone">Low Testosterone</a>
+          <a href="/conditions/menopause">Menopause</a>
+          <a href="/conditions/fatigue">Chronic Fatigue</a>
+          <a href="/conditions/chronic-pain">Chronic Pain</a>
+          <a href="/conditions/brain-fog">Brain Fog</a>
+          <a href="/conditions">View All</a>
+        </div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-heading" data-toggle-sub>Services</div>
+        <div class="mobile-nav-sub">
+          <a href="/services/softwave-therapy">SoftWave Therapy</a>
+          <a href="/services/iv-therapy">IV Therapy</a>
+          <a href="/services/peptide-therapy">Peptide Therapy</a>
+          <a href="/services/vitamin-injections">Vitamin Injections</a>
+          <a href="/services/aesthetics">Aesthetics</a>
+          <a href="/services/weight-management">Weight Management</a>
+          <a href="/services">View All</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-heading" data-toggle-sub>CLARITY</div>
+        <div class="mobile-nav-sub">
+          <a href="/clarity">The Program</a>
+          <a href="/clarity/how-it-works">How It Works</a>
+          <a href="/clarity/for-her">For Women</a>
+          <a href="/clarity/for-him">For Men</a>
+          <a href="/clarity/faq">FAQ</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-heading" data-toggle-sub>Conditions</div>
+        <div class="mobile-nav-sub">
+          <a href="/conditions/hormone-imbalance">Hormone Imbalance</a>
+          <a href="/conditions/low-testosterone">Low Testosterone</a>
+          <a href="/conditions/menopause">Menopause</a>
+          <a href="/conditions/fatigue">Chronic Fatigue</a>
+          <a href="/conditions/chronic-pain">Chronic Pain</a>
+          <a href="/conditions">View All</a>
+        </div>
+      </div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Book Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs" style="margin-top:var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>About</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow reveal" style="transition-delay:0s">Est. 2002</div>
+    <h1 class="reveal" style="transition-delay:0.1s">The system wasn't working. So she <em>rebuilt it.</em></h1>
+    <p class="reveal" style="transition-delay:0.2s">A mother-daughter practice built on one principle: don't stop at symptoms, and don't stop until you find the answer.</p>
+  </div>
+</section>
+
+<!-- Origin Story -->
+<section class="origin-section">
+  <div class="container">
+    <div class="origin-grid">
+      <div class="origin-photo reveal-scale">
+        <img src="images/team/dawn-jennifer-childhood.jpg" alt="Dawn and Jennifer — mother and daughter, early years" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+      </div>
+      <div class="origin-content">
+        <h2 class="reveal">The story behind <em>the practice</em></h2>
+
+        <p>In 2002, Dawn Philp opened her first practice &mdash; not because the system was working, but because it wasn't.</p>
+
+        <p>After years in conventional medicine, she watched patients follow every protocol&hellip; and still get worse. And over time, she began to recognize a pattern she couldn't ignore:</p>
+
+        <p>One prescription leading to the next &mdash; each one masking a symptom while quietly creating another. A domino effect where nothing was truly resolved. And before long, it became a cycle patients were told they'd be on for the rest of their lives.</p>
+
+        <p><strong>Something was broken.</strong></p>
+
+        <p style="font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--gold);margin:32px 0;">Then it became personal.</p>
+
+        <p>Her daughter, Jennifer, was living proof.</p>
+
+        <p>From a young age, she dealt with persistent issues &mdash; weight struggles, gut imbalances, histamine reactions, even shingles at 20. Not life-threatening, but persistent. Unresolved. And dismissed by every provider as &ldquo;normal.&rdquo;</p>
+
+        <p>Instead of accepting each symptom at face value, Dawn did what most providers won't &mdash; she stepped outside the system and rebuilt her entire approach from the ground up.</p>
+
+        <div style="border-left:3px solid var(--gold);padding-left:24px;margin:28px 0;">
+          <p style="margin-bottom:8px;">Why could one person handle stress, food, or environmental triggers with no issue&hellip; while another couldn't?</p>
+          <p style="margin-bottom:8px;">Why do some bodies adapt&hellip; while others break down?</p>
+          <p style="margin-bottom:8px;">What was missing at the foundation?</p>
+          <p style="margin-bottom:0;">What imbalance or deficiency was being overlooked?</p>
+        </div>
+
+        <p>That wasn't a question the conventional system was built to answer.</p>
+
+        <p><strong>That wasn't good enough.</strong></p>
+
+        <p>So Dawn did what most providers won't &mdash; she stepped outside the system and began rebuilding her entire approach from the ground up. Root cause. Not symptom management. Real answers, not temporary relief.</p>
+
+        <p>Jennifer grew up inside that process &mdash; watching every protocol challenged, every assumption questioned, every breakthrough earned.</p>
+
+        <p>And over time, she didn't just get better &mdash; she understood <em>why.</em></p>
+
+        <p>Together, they built THE WELLNESS CO. &mdash; a practice grounded in one belief:</p>
+
+        <div style="border-left:3px solid var(--gold);padding-left:24px;margin:28px 0;">
+          <p style="font-size:18px;font-weight:600;color:var(--text-primary);margin-bottom:6px;">You don't stop at symptoms.</p>
+          <p style="font-size:18px;font-weight:600;color:var(--text-primary);margin-bottom:0;">And you don't stop until you find the answer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Team -->
+<section class="team-section">
+  <div class="container">
+    <div class="team-header">
+      <div class="section-label">Our Team</div>
+      <h2 class="reveal">The people behind your <em>protocol</em></h2>
+    </div>
+
+    <div class="team-grid stagger-children">
+      <div class="team-card">
+        <div class="team-card-photo">[Photo]</div>
+        <h3>Dawn Philp, FNP</h3>
+        <div class="team-card-role">Founder &amp; Lead Provider</div>
+        <p>20+ years in integrative and functional medicine. Dawn personally reviews every CLARITY lab panel and leads optimization appointments for Elite and Transformation members. Board-certified Family Nurse Practitioner.</p>
+      </div>
+      <div class="team-card">
+        <div class="team-card-photo">[Photo]</div>
+        <h3>Jennifer</h3>
+        <div class="team-card-role">CEO &amp; Co-Founder</div>
+        <p>Jennifer runs the operation &mdash; from patient experience to technology to strategy. Her own health journey is the reason THE WELLNESS CO. exists.</p>
+      </div>
+    </div>
+
+    <div class="credentials-bar">
+      Board-Certified NP <span>|</span> DEA Licensed <span>|</span> CAQH Credentialed <span>|</span> Est. 2002
+    </div>
+
+    <!-- Trust Stats Bar -->
+    <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap:24px; margin-top:48px; padding:36px 0; border-top:1px solid rgba(0,0,0,0.06); border-bottom:1px solid rgba(0,0,0,0.06);">
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif; font-size:36px; font-weight:600; color:var(--charcoal);">24+</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Years in Practice</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif; font-size:36px; font-weight:600; color:var(--charcoal);">18,000+</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Patients Treated</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif; font-size:36px; font-weight:600; color:var(--charcoal);">200+</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">CLARITY Members</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif; font-size:36px; font-weight:600; color:var(--charcoal);">4.9★</div>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:4px;">Google Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Patient Testimonials -->
+<section style="padding:80px 0; background:var(--cream);">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:48px;">
+      <div class="section-label">What Patients Say</div>
+      <h2 class="reveal">In their <em>words</em></h2>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:28px; max-width:1000px; margin:0 auto;">
+      <div style="background:var(--white); padding:32px 28px; border:1px solid rgba(0,0,0,0.06);">
+        <div style="color:var(--gold); font-size:24px; margin-bottom:16px;">&ldquo;</div>
+        <p style="font-size:15px; line-height:1.8; color:var(--text-secondary); margin-bottom:20px;">After years of being told my labs were normal, Dawn actually found what was wrong. Within 6 weeks I felt like a completely different person. I have energy again, my brain fog is gone, and I finally lost the weight that wouldn't budge.</p>
+        <div style="font-weight:600; font-size:14px; color:var(--charcoal);">CLARITY Member</div>
+        <div style="font-size:12px; color:var(--text-muted);">Hormone Optimization Patient</div>
+      </div>
+      <div style="background:var(--white); padding:32px 28px; border:1px solid rgba(0,0,0,0.06);">
+        <div style="color:var(--gold); font-size:24px; margin-bottom:16px;">&ldquo;</div>
+        <p style="font-size:15px; line-height:1.8; color:var(--text-secondary); margin-bottom:20px;">The difference between THE WELLNESS CO. and every other provider I've seen is they actually test everything. Not 5 markers. Not 7. Everything. And then they explain what it means in a way that makes sense. I've never felt more informed about my own health.</p>
+        <div style="font-weight:600; font-size:14px; color:var(--charcoal);">CLARITY Member</div>
+        <div style="font-size:12px; color:var(--text-muted);">Comprehensive Lab Patient</div>
+      </div>
+      <div style="background:var(--white); padding:32px 28px; border:1px solid rgba(0,0,0,0.06);">
+        <div style="color:var(--gold); font-size:24px; margin-bottom:16px;">&ldquo;</div>
+        <p style="font-size:15px; line-height:1.8; color:var(--text-secondary); margin-bottom:20px;">I was skeptical about functional medicine, but the diagnostic report they gave me was unlike anything I've ever seen. It connected issues I'd been dealing with separately for years. Dawn's team doesn't just treat symptoms &mdash; they find the root cause.</p>
+        <div style="font-weight:600; font-size:14px; color:var(--charcoal);">CLARITY Member</div>
+        <div style="font-size:12px; color:var(--text-muted);">Root Cause Diagnosis Patient</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Believe -->
+<section class="values-section">
+  <div class="container">
+    <div class="values-header">
+      <h2 class="reveal">Our <em>approach</em></h2>
+    </div>
+
+    <div class="values-grid stagger-children">
+      <div class="value-card">
+        <h3>Test, don't guess</h3>
+        <p>Every protocol starts with comprehensive lab analysis. We don't prescribe based on symptoms alone.</p>
+      </div>
+      <div class="value-card">
+        <h3>Optimize, don't manage</h3>
+        <p>"In range" isn't good enough. We push for optimal &mdash; where you actually feel the difference.</p>
+      </div>
+      <div class="value-card">
+        <h3>Adapt continuously</h3>
+        <p>Your body changes. Your protocol should too. That's why CLARITY is a living system, not a one-time prescription.</p>
+      </div>
+      <div class="value-card">
+        <h3>Treat the whole picture</h3>
+        <p>Symptoms in isolation are misleading. We connect the dots across 10 body systems to find the root cause.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLARITY Callout -->
+<section class="about-clarity-section">
+  <div class="container">
+    <div class="eyebrow">Our Flagship</div>
+    <h2 class="reveal">The CLARITY <em>Program</em></h2>
+    <p>CLARITY analyzes 40+ biomarkers across 10 body systems to build a living, adaptive protocol designed around your unique biology. Three tiers. One goal: optimal.</p>
+    <a href="/clarity" class="btn-gold btn-lg">Explore CLARITY</a>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="reveal">It started with a mother who refused to accept <em>&ldquo;normal.&rdquo;</em></h2>
+    <p class="reveal">Now we bring that same stubbornness to every patient who walks through our doors. That's what family does.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold btn-lg gold-shimmer reveal">Become Part of the Family</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">
+        Clinical Wellness &amp; Medical Aesthetics<br>
+        9658 Mission Gorge Rd, Santee, CA 92071<br>
+        <a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h5>Programs</h5>
+        <a href="/clarity">CLARITY Membership</a>
+        <a href="/clarity/how-it-works">How It Works</a>
+        <a href="/clarity/for-her">For Women</a>
+        <a href="/clarity/for-him">For Men</a>
+        <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="/services/iv-therapy">IV Therapy</a>
+        <a href="/services/softwave-therapy">SoftWave Therapy</a>
+        <a href="/services/peptide-therapy">Peptide Therapy</a>
+        <a href="/services/aesthetics">Aesthetics</a>
+        <a href="/services/weight-management">Weight Management</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="/about">About Us</a>
+        <a href="/conditions">Conditions We Treat</a>
+        <a href="/blog">Blog</a><a href="/contact">Contact</a>
+        <a href="tel:6194443264">(619) 444-3264</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

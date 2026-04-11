@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Contouring San Diego | Emsculpt Muscle Building &amp; Fat Reduction | THE WELLNESS CO.</title>
+<meta name="description" content="Non-invasive body contouring with Emsculpt in Santee, San Diego. 20,000 supramaximal contractions per session. Build muscle, reduce fat, zero downtime. The engineering complement to fitness. Call (619) 444-3264.">
+<link rel="canonical" href="https://urwellness.co/services/body-contouring">
+<meta property="og:title" content="Body Contouring | Emsculpt Muscle Building | THE WELLNESS CO.">
+<meta property="og:description" content="Build what the gym can't. Emsculpt delivers 20,000 supramaximal contractions in 30 minutes — building muscle and reducing fat simultaneously. Santee, San Diego.">
+<meta property="og:url" content="https://urwellness.co/services/body-contouring">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+/* Body Contouring — page-specific (bc- prefix) */
+
+/* Hero — cream with architectural left-accent */
+.bc-hero {
+  padding: 160px 0 100px;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+.bc-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--gold), transparent);
+}
+.bc-hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.bc-hero-copy .eyebrow { margin-bottom: 20px; }
+.bc-hero-copy h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+.bc-hero-copy p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin-bottom: 32px;
+}
+.bc-hero-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.bc-hero-stat {
+  padding: 28px 0;
+  text-align: center;
+}
+.bc-hero-stat:first-child {
+  border-right: 1px solid rgba(26,26,26,0.08);
+}
+.bc-hero-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--charcoal);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.bc-hero-stat-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.bc-hero-stat-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+/* Dual Energy — dark science block */
+.bc-dual {
+  padding: 100px 0;
+  background: linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%);
+  position: relative;
+  overflow: hidden;
+}
+.bc-dual::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(198,169,108,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+.bc-dual-header {
+  text-align: center;
+  margin-bottom: 56px;
+  position: relative;
+  z-index: 1;
+}
+.bc-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.bc-energy-card {
+  padding: 40px 36px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.bc-energy-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+}
+.bc-energy-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+.bc-energy-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.5);
+}
+.bc-energy-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bc-plus {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--gold-light);
+  background: rgba(198,169,108,0.08);
+}
+
+/* Treatment Areas — white */
+.bc-areas {
+  padding: 100px 0;
+  background: var(--white);
+}
+.bc-area-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  max-width: 1100px;
+  margin: 48px auto 0;
+}
+.bc-area-card {
+  padding: 36px 24px;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.06);
+  position: relative;
+}
+.bc-area-card:last-child { border-right: none; }
+.bc-area-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: var(--gold);
+}
+.bc-area-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+  margin-top: 8px;
+}
+.bc-area-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Results Timeline — cream */
+.bc-results {
+  padding: 100px 0;
+  background: var(--cream);
+}
+.bc-results-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 1000px;
+  margin: 48px auto 0;
+  position: relative;
+}
+.bc-results-track::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 60px;
+  right: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), rgba(198,169,108,0.2));
+}
+.bc-results-node {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.bc-results-dot {
+  width: 12px;
+  height: 12px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin: 22px auto 20px;
+  border: 3px solid var(--cream);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+.bc-results-when {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+.bc-results-node h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.bc-results-node p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Authority Strip — dark */
+.bc-authority {
+  padding: 60px 0;
+  background: linear-gradient(175deg, #1A1816 0%, #0F0E0C 100%);
+}
+.bc-authority-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  text-align: center;
+}
+.bc-authority-cell {
+  padding: 20px;
+  position: relative;
+}
+.bc-authority-cell + .bc-authority-cell::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(180deg, transparent, var(--gold), transparent);
+}
+.bc-authority-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.bc-authority-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+/* Build Your Machine — white */
+.bc-stack-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+.bc-stack-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.bc-stack-card {
+  display: block;
+  background: linear-gradient(135deg, var(--cream), #F0EDE8);
+  padding: 32px 28px;
+  border-bottom: 3px solid var(--gold);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.bc-stack-card:hover { transform: translateY(-2px); }
+.bc-stack-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.bc-stack-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+}
+.bc-stack-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+.bc-stack-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+}
+
+/* CLARITY callout — cream */
+.bc-clarity {
+  padding: 80px 0;
+  background: var(--cream);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .bc-hero-inner { grid-template-columns: 1fr; }
+  .bc-hero-copy h1 { font-size: 36px; }
+  .bc-hero { padding: 130px 0 70px; }
+  .bc-dual-grid { grid-template-columns: 1fr; gap: 20px; }
+  .bc-energy-divider { padding: 12px 0; }
+  .bc-area-grid { grid-template-columns: 1fr 1fr; }
+  .bc-area-card { border-bottom: 1px solid rgba(0,0,0,0.06); }
+  .bc-area-card:last-child { border-bottom: none; }
+  .bc-results-track { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .bc-results-track::before { display: none; }
+  .bc-authority-grid { grid-template-columns: 1fr 1fr; }
+  .bc-authority-cell + .bc-authority-cell::before { display: none; }
+  .bc-stack-grid { grid-template-columns: 1fr; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  "name": "Body Contouring - Emsculpt",
+  "description": "Non-invasive body contouring using Emsculpt HIFEM technology for muscle building and fat reduction. 20,000 supramaximal contractions per 30-minute session.",
+  "procedureType": "https://schema.org/NoninvasiveProcedure",
+  "url": "https://urwellness.co/services/body-contouring",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "THE WELLNESS CO.",
+    "telephone": "+1-619-444-3264",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9658 Mission Gorge Rd",
+      "addressLocality": "Santee",
+      "addressRegion": "CA",
+      "postalCode": "92071",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does Emsculpt work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emsculpt uses HIFEM (High-Intensity Focused Electromagnetic) technology to trigger supramaximal muscle contractions — contractions far more intense than what voluntary exercise can achieve. A single 30-minute session induces 20,000 contractions, building muscle fiber and triggering fat cell apoptosis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many Emsculpt sessions do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most patients see optimal results with 4-6 sessions, typically scheduled 2-3 days apart. Maintenance sessions can be done monthly or quarterly depending on your goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Emsculpt hurt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most patients describe the sensation as an intense muscle contraction — similar to a very strong workout. The intensity is adjustable and most patients tolerate it well. Mild soreness similar to post-exercise soreness is common for a day or two."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What areas can Emsculpt treat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emsculpt treats the abdomen, glutes, arms (biceps and triceps), calves, and thighs. Each area receives a targeted protocol optimized for the muscle group being treated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Emsculpt a weight loss treatment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Emsculpt is a body composition treatment — it builds muscle and reduces fat in targeted areas. It is most effective as a complement to fitness, weight management, or hormone optimization, not as a standalone weight loss solution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I combine Emsculpt with other treatments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Emsculpt pairs well with medical weight management (GLP-1 medications), peptide therapy (MOTS-C, AOD-9604), SoftWave for tissue recovery, and CLARITY hormone optimization. Many patients see accelerated results by stacking treatments."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Engineer Your Frame</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs" style="margin-top: var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li>Body Contouring</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================
+     SECTION 1: CREAM HERO — split layout with stats
+     ============================================ -->
+<section class="bc-hero" style="position:relative;overflow:hidden;">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="bc-hero-inner">
+      <div class="bc-hero-copy">
+        <div class="eyebrow reveal" style="animation-delay:0s;">Non-Invasive Body Sculpting</div>
+        <h1 class="reveal" style="animation-delay:0.1s;">Build What the Gym <em>Can't.</em></h1>
+        <p>Your gym builds endurance. Emsculpt builds architecture. 20,000 supramaximal muscle contractions in a single 30-minute session — triggering muscle growth and fat reduction simultaneously at an intensity no workout can replicate. No surgery. No needles. No downtime.</p>
+        <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-primary">Engineer Your Frame</a>
+      </div>
+      <div class="bc-hero-stats">
+        <div class="bc-hero-stat">
+          <div class="bc-hero-stat-num" data-counter="20000">0</div>
+          <div class="bc-hero-stat-label">Contractions</div>
+          <div class="bc-hero-stat-desc">Per 30-minute session</div>
+        </div>
+        <div class="bc-hero-stat">
+          <div class="bc-hero-stat-num">0</div>
+          <div class="bc-hero-stat-label">Downtime</div>
+          <div class="bc-hero-stat-desc">Walk out. Resume life.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:0;opacity:0.2;">
+    <div style="position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(198,169,108,0.6),transparent);animation:scanLine 4s ease-in-out infinite;"></div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 2: DUAL ENERGY — Dark science block
+     ============================================ -->
+<section class="bc-dual">
+  <div class="bc-dual-header">
+    <div style="font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold-light); margin-bottom: 14px;">The Technology</div>
+    <h2 class="reveal" style="font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 500; color: var(--white); line-height: 1.3; max-width: 700px; margin: 0 auto;">Two Forces. One <em style="color: var(--gold-light);">Session.</em></h2>
+  </div>
+  <div class="container">
+    <div class="bc-dual-grid">
+      <div class="bc-energy-card">
+        <div class="bc-energy-tag">HIFEM Energy</div>
+        <h3>Muscle Construction</h3>
+        <p>High-Intensity Focused Electromagnetic energy induces supramaximal contractions — the kind your nervous system physically cannot produce on its own. These contractions force muscle fibers to adapt, remodel, and grow. The equivalent of 20,000 crunches or squats, concentrated into 30 minutes of progressive overload your body has never experienced.</p>
+      </div>
+      <div class="bc-energy-divider">
+        <div class="bc-plus">+</div>
+      </div>
+      <div class="bc-energy-card">
+        <div class="bc-energy-tag">Simultaneous Effect</div>
+        <h3>Fat Disruption</h3>
+        <p>The same contractions that build muscle also trigger fat cell apoptosis in the treatment area — programmed cell death of adipocytes. Your body metabolizes and eliminates these disrupted fat cells naturally over the following weeks. The result: more muscle mass and less subcutaneous fat from a single treatment modality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 3: TREATMENT AREAS — White, 5-column
+     ============================================ -->
+<section class="bc-areas">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 8px;">
+      <div class="section-label">Treatment Zones</div>
+      <h2 class="reveal">Where Emsculpt <em>Works</em></h2>
+    </div>
+    <div class="bc-area-grid stagger-children">
+      <div class="bc-area-card">
+        <h4>Abdomen</h4>
+        <p>Core strengthening, abdominal definition, subcutaneous belly fat reduction. The most requested treatment area for both men and women.</p>
+      </div>
+      <div class="bc-area-card">
+        <h4>Glutes</h4>
+        <p>Non-surgical lift and strengthening. Deep muscle activation that builds volume and firmness beyond what targeted exercises can achieve alone.</p>
+      </div>
+      <div class="bc-area-card">
+        <h4>Arms</h4>
+        <p>Bicep and tricep toning for improved definition and strength. Particularly effective for patients seeking reduction in upper arm laxity.</p>
+      </div>
+      <div class="bc-area-card">
+        <h4>Thighs</h4>
+        <p>Inner and outer thigh sculpting for improved contour, muscle tone, and definition in an area that resists targeted exercise.</p>
+      </div>
+      <div class="bc-area-card">
+        <h4>Calves</h4>
+        <p>Calf muscle building and definition. Useful for improving lower leg contour and addressing muscle asymmetry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 4: RESULTS TIMELINE — Cream
+     ============================================ -->
+<section class="bc-results">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 8px;">
+      <div style="font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px;">What to Expect</div>
+      <h2 class="reveal">The Remodeling <em>Timeline</em></h2>
+    </div>
+    <div class="bc-results-track stagger-children">
+      <div class="bc-results-node">
+        <div class="bc-results-when">Session Day</div>
+        <div class="bc-results-dot"></div>
+        <h4>Immediate</h4>
+        <p>30 minutes, lie down, walk out. Mild soreness like a deep workout. No downtime, no restrictions.</p>
+      </div>
+      <div class="bc-results-node">
+        <div class="bc-results-when">Week 2-4</div>
+        <div class="bc-results-dot"></div>
+        <h4>Remodeling</h4>
+        <p>Muscle fibers repair and strengthen. Fat cells break down and get metabolized. Changes begin beneath the surface.</p>
+      </div>
+      <div class="bc-results-node">
+        <div class="bc-results-when">Sessions 4-6</div>
+        <div class="bc-results-dot"></div>
+        <h4>Visible Change</h4>
+        <p>Measurable increases in muscle thickness and decreases in subcutaneous fat. Most patients complete 4-6 sessions for optimal results.</p>
+      </div>
+      <div class="bc-results-node">
+        <div class="bc-results-when">Ongoing</div>
+        <div class="bc-results-dot"></div>
+        <h4>Maintenance</h4>
+        <p>Monthly or quarterly sessions sustain and build upon results. Stack with peptides or hormonal optimization for compounding gains.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 5: AUTHORITY STRIP — Dark stats
+     ============================================ -->
+<section class="bc-authority">
+  <div class="container">
+    <div class="bc-authority-grid">
+      <div class="bc-authority-cell">
+        <div class="bc-authority-num" data-counter="20000" data-counter-duration="2500">0</div>
+        <div class="bc-authority-label">Contractions / Session</div>
+      </div>
+      <div class="bc-authority-cell">
+        <div class="bc-authority-num">30</div>
+        <div class="bc-authority-label">Minutes Per Treatment</div>
+      </div>
+      <div class="bc-authority-cell">
+        <div class="bc-authority-num">5</div>
+        <div class="bc-authority-label">Treatment Zones</div>
+      </div>
+      <div class="bc-authority-cell">
+        <div class="bc-authority-num">0</div>
+        <div class="bc-authority-label">Days of Downtime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 6: BUILD YOUR MACHINE — White, stack cards
+     ============================================ -->
+<section class="bc-stack-section">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <div class="eyebrow">Build Your Machine</div>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 500;">Emsculpt is the frame. These are the <em>systems.</em></h3>
+    </div>
+    <div class="bc-stack-grid stagger-children">
+      <a href="/services/weight-management" class="bc-stack-card">
+        <div class="bc-stack-tag">Fat Loss First</div>
+        <h4>Weight Management</h4>
+        <p>GLP-1 medications and metabolic optimization remove the fat layer. Emsculpt sculpts and defines the muscle underneath. Sequence matters.</p>
+        <span class="bc-stack-link">Explore Weight Management &rarr;</span>
+      </a>
+      <a href="/services/peptide-therapy" class="bc-stack-card">
+        <div class="bc-stack-tag">Metabolic Peptides</div>
+        <h4>Phoenix Stack</h4>
+        <p>MOTS-C and AOD-9604 target fat metabolism at the mitochondrial level while Emsculpt builds the muscle tissue. Two mechanisms, one physique.</p>
+        <span class="bc-stack-link">Explore Peptides &rarr;</span>
+      </a>
+      <a href="/services/softwave-therapy" class="bc-stack-card">
+        <div class="bc-stack-tag">Recovery + Repair</div>
+        <h4>SoftWave Therapy</h4>
+        <p>Acoustic wave technology accelerates tissue recovery and reduces inflammation. Faster recovery between Emsculpt sessions means faster cumulative results.</p>
+        <span class="bc-stack-link">Explore SoftWave &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 7: CLARITY CALLOUT — Cream
+     ============================================ -->
+<section class="bc-clarity">
+  <div class="container">
+    <div style="max-width: 720px;">
+      <div style="font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px;">CLARITY Membership</div>
+      <h2 class="reveal" style="font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; color: var(--charcoal); line-height: 1.3; margin-bottom: 20px;">Emsculpt builds the muscle. Your <em>hormones</em> decide how much.</h2>
+      <p style="font-size: 16px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 12px;">Testosterone drives protein synthesis. Growth hormone governs tissue repair. Metabolic markers determine whether your body burns fat or stores it. When these systems are optimized, every Emsculpt session produces more muscle growth and more fat reduction than the machine alone.</p>
+      <p style="font-size: 16px; line-height: 1.8; color: var(--text-secondary); margin-bottom: 28px;">CLARITY gives Emsculpt the biological foundation it was designed for. 42 biomarkers. Hormone optimization. The machine does the work. Your biology amplifies it.</p>
+      <a href="/clarity" style="display: inline-block; font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; letter-spacing: 0.5px;">Learn about CLARITY &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 8: FAQ — Dark (alternating from cream above)
+     ============================================ -->
+<section class="faq-section" style="background: linear-gradient(175deg, #1A1816 0%, #0F0E0C 100%); color: var(--white);">
+  <div class="container">
+    <h2 class="reveal" style="color: var(--white);">Frequently Asked <em>Questions</em></h2>
+
+    <div class="faq-item" style="border-color: rgba(255,255,255,0.08);">
+      <div class="faq-question">
+        <h3 style="color: var(--white);">How does Emsculpt work?</h3>
+        <div class="faq-icon" style="border-color: rgba(255,255,255,0.15); color: var(--gold-light);"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p style="color: rgba(255,255,255,0.6);">Emsculpt uses HIFEM (High-Intensity Focused Electromagnetic) technology to trigger supramaximal muscle contractions — contractions far more intense than what voluntary exercise can achieve. A single 30-minute session induces 20,000 contractions, building and strengthening muscle fiber while triggering fat cell apoptosis in the treatment area.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item" style="border-color: rgba(255,255,255,0.08);">
+      <div class="faq-question">
+        <h3 style="color: var(--white);">How many sessions do I need?</h3>
+        <div class="faq-icon" style="border-color: rgba(255,255,255,0.15); color: var(--gold-light);"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p style="color: rgba(255,255,255,0.6);">Most patients see optimal results with 4-6 sessions, typically scheduled 2-3 days apart. Results build progressively as muscle fibers repair and strengthen. Maintenance sessions monthly or quarterly sustain and build upon gains depending on your goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item" style="border-color: rgba(255,255,255,0.08);">
+      <div class="faq-question">
+        <h3 style="color: var(--white);">Does Emsculpt hurt?</h3>
+        <div class="faq-icon" style="border-color: rgba(255,255,255,0.15); color: var(--gold-light);"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p style="color: rgba(255,255,255,0.6);">Most patients describe the sensation as an intense muscle contraction — similar to a very strong workout. The intensity is adjustable and gradually increased during the session. There is no pain during or after treatment, though mild muscle soreness similar to post-exercise soreness is common for a day or two.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item" style="border-color: rgba(255,255,255,0.08);">
+      <div class="faq-question">
+        <h3 style="color: var(--white);">What areas can Emsculpt treat?</h3>
+        <div class="faq-icon" style="border-color: rgba(255,255,255,0.15); color: var(--gold-light);"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p style="color: rgba(255,255,255,0.6);">Emsculpt treats the abdomen, glutes, arms (biceps and triceps), thighs, and calves. Each area receives a targeted protocol optimized for the muscle group being treated. Your provider will recommend the best approach for your body composition goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item" style="border-color: rgba(255,255,255,0.08);">
+      <div class="faq-question">
+        <h3 style="color: var(--white);">Is this a weight loss treatment?</h3>
+        <div class="faq-icon" style="border-color: rgba(255,255,255,0.15); color: var(--gold-light);"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p style="color: rgba(255,255,255,0.6);">No. Emsculpt is a body composition treatment. It builds muscle and reduces targeted fat, but it is not designed as a standalone weight loss solution. For patients with significant weight to lose, we recommend starting with medical weight management and introducing Emsculpt once the fat layer has been reduced — so you can sculpt and define the muscle underneath.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item" style="border-color: rgba(255,255,255,0.08);">
+      <div class="faq-question">
+        <h3 style="color: var(--white);">Can I combine Emsculpt with other treatments?</h3>
+        <div class="faq-icon" style="border-color: rgba(255,255,255,0.15); color: var(--gold-light);"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p style="color: rgba(255,255,255,0.6);">Absolutely. Emsculpt pairs well with medical weight management (GLP-1 medications for fat loss first), peptide therapy (MOTS-C and AOD-9604 for metabolic enhancement), SoftWave for tissue recovery, and CLARITY hormone optimization for maximized muscle synthesis and fat reduction. Stacking accelerates results.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FROM THE BLOG -->
+<section style="padding: 80px 0; background: var(--cream);">
+  <div class="container">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; text-align: center; margin-bottom: 48px; color: var(--charcoal);">From the <em>Blog</em></h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+      <a href="/blog/hormone-imbalance-signs-women-over-40" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">7 Signs of Hormone Imbalance in Women Over 40</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">When stubborn weight and body composition changes signal hormonal shifts.</p></div>
+      </a>
+      <a href="/blog/what-is-peptide-therapy-benefits-types" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">What Is Peptide Therapy? Benefits, Types &amp; Who It's For</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">Peptides that complement body contouring by targeting fat metabolism and recovery.</p></div>
+      </a>
+      <a href="/blog/testosterone-therapy-san-diego-what-to-expect" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">Testosterone Therapy in San Diego: What to Expect</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">How testosterone optimization supports lean muscle mass and body composition.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SECTION 9: FINAL CTA — Light (alternating from dark FAQ)
+     ============================================ -->
+<section style="padding: 100px 0; background: var(--cream); text-align: center;">
+  <div class="container">
+    <h2 class="reveal" style="font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 500; margin-bottom: 16px;">20,000 contractions. 30 minutes. <em>Zero excuses.</em></h2>
+    <p style="font-size: 17px; color: var(--text-secondary); max-width: 500px; margin: 0 auto 36px; line-height: 1.7;">Build muscle. Reduce fat. One session at a time.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold btn-lg gold-shimmer">Engineer Your Frame</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+
+<!-- Sticky Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="mobile-cta-book">Engineer Your Frame</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

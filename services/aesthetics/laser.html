@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laser Treatments San Diego | Clinical Laser Skin Therapy | THE WELLNESS CO. Santee</title>
+  <meta name="description" content="Medical-grade laser treatments in Santee, San Diego. Hair removal, pigment correction, skin resurfacing, vascular lesions, tattoo removal. NP-administered with clinical precision. Call (619) 444-3264.">
+  <link rel="canonical" href="https://urwellness.co/services/aesthetics/laser">
+  <meta property="og:title" content="Laser Treatments | THE WELLNESS CO.">
+  <meta property="og:description" content="Medical-grade laser treatments administered by experienced NPs. Hair removal, pigment correction, skin resurfacing, and more in Santee, San Diego.">
+  <meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://urwellness.co/services/aesthetics/laser">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* las- prefix: Laser Treatments page-specific styles */
+
+    .las-hero {
+      padding: 160px 0 100px;
+      background: linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .las-hero::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(198,169,108,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .las-hero .eyebrow { color: var(--gold-light); }
+    .las-hero h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: var(--white);
+      margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .las-hero h1 em { color: var(--gold-light); font-style: italic; }
+    .las-hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    /* What Laser Can Do — labeled rows */
+    .las-category {
+      padding: 32px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+    .las-category:first-child {
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .las-category-label {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+    .las-category-desc {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+    .las-category-desc strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* Why Clinical Matters — two-col comparison */
+    .las-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .las-compare-col {
+      padding: 36px 32px;
+      border-top: 3px solid var(--gold);
+    }
+    .las-compare-col--clinical {
+      background: var(--white);
+    }
+    .las-compare-col--medspa {
+      background: rgba(0,0,0,0.03);
+    }
+    .las-compare-col h3 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    .las-compare-col p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .las-compare-list {
+      list-style: none;
+      padding: 0;
+    }
+    .las-compare-list li {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      padding: 6px 0 6px 18px;
+      position: relative;
+    }
+    .las-compare-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 5px;
+      height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    /* What to Expect — 4-step timeline */
+    .las-timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .las-step {
+      position: relative;
+      padding: 32px 24px;
+      background: rgba(255,255,255,0.06);
+      border-top: 2px solid rgba(198,169,108,0.4);
+    }
+    .las-step-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 400;
+      color: rgba(198,169,108,0.25);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .las-step h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .las-step p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* FAQ with las- prefix */
+    .las-faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .las-faq-item:first-child {
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+    .las-faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.2s;
+    }
+    .las-faq-q:hover { color: var(--gold); }
+    .las-faq-q h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      flex: 1;
+      padding-right: 24px;
+    }
+    .las-faq-icon {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      border: 1.5px solid rgba(0,0,0,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+    .las-faq-icon::before,
+    .las-faq-icon::after {
+      content: '';
+      position: absolute;
+      background: var(--text-primary);
+      transition: transform 0.3s;
+    }
+    .las-faq-icon::before { width: 12px; height: 2px; }
+    .las-faq-icon::after { width: 2px; height: 12px; }
+    .las-faq-item.active .las-faq-icon { border-color: var(--gold); }
+    .las-faq-item.active .las-faq-icon::after { transform: rotate(90deg); }
+    .las-faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .las-faq-item.active .las-faq-a {
+      max-height: 300px;
+    }
+    .las-faq-a-inner {
+      padding: 0 0 24px;
+    }
+    .las-faq-a-inner p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .las-hero { padding: 130px 0 72px; }
+      .las-hero h1 { font-size: 32px; }
+      .las-hero p { font-size: 16px; }
+      .las-category {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 24px 0;
+      }
+      .las-compare {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .las-compare-col { padding: 28px 24px; }
+      .las-timeline {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .las-step { padding: 24px 20px; }
+    }
+  </style>
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Laser Treatments",
+    "description": "Medical-grade laser treatments including hair removal, pigment correction, skin resurfacing, vascular lesions, and tattoo removal.",
+    "provider": {
+      "@type": "MedicalClinic",
+      "name": "THE WELLNESS CO.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9658 Mission Gorge Rd",
+        "addressLocality": "Santee",
+        "addressRegion": "CA",
+        "postalCode": "92071"
+      },
+      "telephone": "+16194443264"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does laser treatment hurt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sensation varies by treatment type and area. Most patients describe it as a warm snap or rubber-band flick. Cooling technology is built into modern laser systems, and topical numbing can be applied for more sensitive areas. Discomfort is brief and manageable for the vast majority of patients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many laser sessions will I need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Session count depends on the treatment. Hair removal typically requires 6 to 8 sessions spaced 4 to 6 weeks apart. Pigment correction may take 2 to 4 sessions. Skin resurfacing can produce significant results in 1 to 3 sessions. Your provider will outline a specific protocol during your consultation based on your skin type, concern, and treatment goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is laser safe for all skin types?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Modern laser platforms offer multiple wavelengths and settings that can be safely used across a range of skin types, including darker complexions. The critical factor is proper assessment by an experienced provider who understands how different skin types respond to specific wavelengths and energy levels. This is why clinical-grade treatment with trained providers matters significantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get laser treatment if I have sun exposure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Active sun exposure and tanning increase the risk of complications including burns and hyperpigmentation. Most laser protocols require that you avoid direct sun exposure and tanning beds for 2 to 4 weeks before and after treatment. Your provider will assess your current skin condition and may recommend rescheduling if there is a recent tan. Consistent SPF use is essential throughout your treatment course."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">See What Light Can Do</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs" style="margin-top:var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/services/aesthetics">Aesthetics</a></li>
+      <li>Laser Treatments</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Hero (DARK) -->
+<section class="las-hero">
+  <div class="container">
+    <div class="eyebrow reveal" style="transition-delay:0s">Clinical Laser Therapy</div>
+    <h1 class="reveal" style="transition-delay:0.1s">Light Does the Work. <em>Precision Guides It.</em></h1>
+    <p class="reveal" style="transition-delay:0.2s">Medical-grade laser systems calibrated to your skin type, your concern, and your physiology. Wavelength selection, power settings, and pulse duration controlled by an experienced provider who understands what light can do when it is aimed correctly.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold reveal" style="transition-delay:0.3s">See What Light Can Do</a>
+  </div>
+</section>
+
+<!-- What Laser Can Do (LIGHT — white) -->
+<section style="padding:var(--section-pad);background:var(--white);">
+  <div class="container" style="max-width:860px;">
+    <div class="text-center">
+      <div class="eyebrow">Treatment Categories</div>
+      <h2 class="reveal">What Laser <em>Can Do</em></h2>
+      <p style="font-size:16px;color:var(--text-secondary);max-width:600px;margin:0 auto;line-height:1.7;">Laser is not one treatment. It is a platform of targeted energy applications, each calibrated for a specific tissue response. Your provider selects the right wavelength, pulse width, and intensity for each concern.</p>
+    </div>
+
+    <div style="margin-top:48px;">
+      <div class="las-category">
+        <div class="las-category-label">Hair Removal</div>
+        <div class="las-category-desc"><strong>Targeted follicle destruction.</strong> Laser energy is absorbed by melanin in the hair shaft, disabling the follicle at its growth phase without disturbing surrounding skin. Effective on face, underarms, legs, bikini, back, and chest. Multiple sessions required to catch each hair in its active growth cycle.</div>
+      </div>
+      <div class="las-category">
+        <div class="las-category-label">Pigment Correction</div>
+        <div class="las-category-desc"><strong>Breaking down unwanted melanin deposits.</strong> Sun damage, age spots, melasma, and post-inflammatory hyperpigmentation respond to specific wavelengths that fragment excess pigment while leaving the surrounding tissue intact. Results develop as the body clears fragmented pigment over 2 to 6 weeks post-treatment.</div>
+      </div>
+      <div class="las-category">
+        <div class="las-category-label">Skin Resurfacing</div>
+        <div class="las-category-desc"><strong>Controlled surface renewal.</strong> Ablative and non-ablative laser resurfacing removes damaged outer layers or stimulates deep collagen production without breaking the surface. Addresses fine lines, rough texture, enlarged pores, and acne scarring. Depth and intensity are adjusted based on skin condition and recovery tolerance.</div>
+      </div>
+      <div class="las-category">
+        <div class="las-category-label">Vascular Lesions</div>
+        <div class="las-category-desc"><strong>Targeting visible vessels and redness.</strong> Specific wavelengths are absorbed by hemoglobin in blood vessels, collapsing spider veins, broken capillaries, rosacea-related redness, and cherry angiomas. The vessel is sealed and gradually absorbed by the body over the following weeks.</div>
+      </div>
+      <div class="las-category">
+        <div class="las-category-label">Tattoo Removal</div>
+        <div class="las-category-desc"><strong>Fragmenting embedded ink particles.</strong> High-intensity pulses shatter ink particles into fragments small enough for the immune system to clear. Different ink colors require different wavelengths. Professional tattoos typically require 6 to 12 sessions. Fading is gradual and progressive with each treatment.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Clinical Matters (DARK — cream bg) -->
+<section style="padding:var(--section-pad);background:var(--cream);">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">The Difference</div>
+      <h2 class="reveal">Why Clinical <em>Matters</em></h2>
+      <p style="font-size:16px;color:var(--text-secondary);max-width:600px;margin:0 auto;line-height:1.7;">The same laser in different hands produces entirely different outcomes. The device is not the differentiator. The provider is.</p>
+    </div>
+
+    <div class="las-compare stagger-children">
+      <div class="las-compare-col las-compare-col--clinical">
+        <h3>Clinical Setting</h3>
+        <p>Provider-led assessment, medical-grade equipment, and parameters set by someone who understands tissue response at the cellular level.</p>
+        <ul class="las-compare-list">
+          <li>Full skin assessment before every session</li>
+          <li>Wavelength selected for your specific concern and skin type</li>
+          <li>Power, pulse duration, and cooling adjusted in real time</li>
+          <li>Medical oversight for complications or unexpected reactions</li>
+          <li>Fitzpatrick skin typing and contraindication screening</li>
+          <li>Integrated with your full medical picture</li>
+        </ul>
+      </div>
+      <div class="las-compare-col las-compare-col--medspa">
+        <h3>Standard Med Spa</h3>
+        <p>Technician-operated, often with preset protocols and limited ability to adjust parameters for individual anatomy.</p>
+        <ul class="las-compare-list">
+          <li>Standardized settings applied broadly</li>
+          <li>Limited skin-type assessment capability</li>
+          <li>Fixed protocols regardless of individual response</li>
+          <li>Fewer options for managing adverse reactions</li>
+          <li>No integration with hormones, nutrition, or medications</li>
+          <li>Volume-driven appointment scheduling</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Authority Moment (DARK — charcoal) -->
+<section class="science-block">
+  <div class="container">
+    <h2 class="reveal">Not all lasers are equal.<br>Not all hands holding them <em>are either.</em></h2>
+    <p>Every session at THE WELLNESS CO. is administered by a licensed provider with decades of clinical experience. Power settings, cooling intervals, and pass patterns are never left to a preset. They are assessed, adjusted, and verified in real time.</p>
+  </div>
+</section>
+
+<!-- What to Expect (DARK — gradient, alternates from science-block which is also dark but different bg) -->
+<section style="padding:var(--section-pad);background:linear-gradient(175deg, #1A1816 0%, #0F0E0C 100%);color:var(--white);">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow" style="color:var(--gold-light);">Your Visit</div>
+      <h2 class="reveal" style="color:var(--white);margin-bottom:16px;">What to <em style="color:var(--gold-light);">Expect</em></h2>
+      <p style="font-size:16px;color:rgba(255,255,255,0.5);max-width:500px;margin:0 auto;line-height:1.7;">From assessment through recovery, every step is deliberate.</p>
+    </div>
+
+    <div class="las-timeline stagger-children">
+      <div class="las-step">
+        <div class="las-step-num">01</div>
+        <h4>Consultation</h4>
+        <p>Your provider evaluates your skin type, pigmentation, medical history, and treatment goals. Together you determine the right laser modality, expected sessions, and a realistic timeline for results.</p>
+      </div>
+      <div class="las-step">
+        <div class="las-step-num">02</div>
+        <h4>Preparation</h4>
+        <p>Depending on the treatment, topical numbing may be applied 20 to 30 minutes beforehand. Sun avoidance instructions are given in advance. The treatment area is cleaned and marked for precision.</p>
+      </div>
+      <div class="las-step">
+        <div class="las-step-num">03</div>
+        <h4>Treatment</h4>
+        <p>The laser is applied with continuous assessment. Your provider monitors tissue response in real time, adjusting energy, cooling, and pass patterns. Sessions range from 15 minutes for small areas to 60 minutes for larger zones.</p>
+      </div>
+      <div class="las-step">
+        <div class="las-step-num">04</div>
+        <h4>Recovery</h4>
+        <p>Post-treatment care varies by modality. Mild warmth or redness lasting hours to days is common. Your provider gives specific aftercare instructions including sun protection, product restrictions, and follow-up timing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLARITY Add-On (WHITE) -->
+<section style="padding:var(--section-pad);background:var(--white);position:relative;">
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);"></div>
+  <div class="container" style="max-width:800px;text-align:center;">
+    <div class="eyebrow">Add CLARITY to Your Protocol</div>
+    <h2 class="reveal" style="font-size:36px;line-height:1.25;margin-bottom:16px;">Laser results depend on what is happening <em>underneath.</em></h2>
+    <p style="font-size:16px;line-height:1.8;color:var(--text-secondary);margin-bottom:28px;">Hormones affect pigmentation. Nutrition affects healing speed. Inflammation affects how your skin responds to energy. CLARITY members receive tiered discounts on all laser treatments, with protocols informed by their full biomarker profile.</p>
+    <a href="/clarity" style="font-size:13px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-decoration:none;">Explore CLARITY &rarr;</a>
+  </div>
+</section>
+
+<!-- FAQ (CREAM) -->
+<section style="padding:var(--section-pad);background:var(--cream);">
+  <div class="container" style="max-width:800px;">
+    <h2 class="reveal" style="font-size:36px;margin-bottom:48px;text-align:center;">Laser Treatment <em>FAQ</em></h2>
+
+    <div class="las-faq-item">
+      <div class="las-faq-q">
+        <h3>Does laser treatment hurt?</h3>
+        <span class="las-faq-icon"></span>
+      </div>
+      <div class="las-faq-a">
+        <div class="las-faq-a-inner">
+          <p>Sensation varies by treatment type and area. Most patients describe it as a warm snap or rubber-band flick. Cooling technology is integrated into modern laser systems, and topical numbing can be applied for more sensitive treatment zones. Discomfort is brief and manageable for the vast majority of patients.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="las-faq-item">
+      <div class="las-faq-q">
+        <h3>How many sessions will I need?</h3>
+        <span class="las-faq-icon"></span>
+      </div>
+      <div class="las-faq-a">
+        <div class="las-faq-a-inner">
+          <p>Session count depends on the treatment. Hair removal typically requires 6 to 8 sessions spaced 4 to 6 weeks apart. Pigment correction may take 2 to 4 sessions. Skin resurfacing can produce significant results in 1 to 3 sessions. Your provider will outline a specific protocol during your consultation based on your skin type, concern, and goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="las-faq-item">
+      <div class="las-faq-q">
+        <h3>Is laser safe for all skin types?</h3>
+        <span class="las-faq-icon"></span>
+      </div>
+      <div class="las-faq-a">
+        <div class="las-faq-a-inner">
+          <p>Modern laser platforms offer multiple wavelengths and settings that can be safely used across a range of skin types, including darker complexions. The critical factor is proper assessment by an experienced provider who understands how different skin types respond to specific wavelengths and energy levels. This is why clinical-grade treatment with experienced providers matters.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="las-faq-item">
+      <div class="las-faq-q">
+        <h3>Do I need to avoid sun exposure before and after treatment?</h3>
+        <span class="las-faq-icon"></span>
+      </div>
+      <div class="las-faq-a">
+        <div class="las-faq-a-inner">
+          <p>Yes. Active sun exposure and tanning increase the risk of complications including burns and hyperpigmentation. Most protocols require that you avoid direct sun and tanning beds for 2 to 4 weeks before and after treatment. Your provider may recommend rescheduling if there is a recent tan. Consistent SPF use is essential throughout your treatment course.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Layer Your Laser Results (WHITE) -->
+<section style="padding:var(--section-pad);background:var(--white);">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">Compound Your Results</div>
+      <h2 class="reveal">Layer Your Laser <em>Protocol</em></h2>
+    </div>
+    <div class="stagger-children" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;">
+      <a href="/services/aesthetics/chemical-peels" style="display:block;text-decoration:none;color:inherit;background:linear-gradient(135deg,var(--cream),#F0EDE8);padding:36px 28px;border-bottom:3px solid var(--gold);transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Skin Renewal</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:500;margin-bottom:10px;">Chemical Peels</h4>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px;">Peels address surface texture and tone while laser works beneath. Skin clarity accelerated from both directions.</p>
+        <span style="font-size:13px;font-weight:600;color:var(--gold);letter-spacing:0.5px;">See Your Peel Options &rarr;</span>
+      </a>
+      <a href="/services/aesthetics/microneedling" style="display:block;text-decoration:none;color:inherit;background:linear-gradient(135deg,var(--cream),#F0EDE8);padding:36px 28px;border-bottom:3px solid var(--gold);transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Collagen Induction</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:500;margin-bottom:10px;">Microneedling</h4>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px;">Triggers collagen at controlled depths. Combined with laser resurfacing, the remodeling response compounds.</p>
+        <span style="font-size:13px;font-weight:600;color:var(--gold);letter-spacing:0.5px;">Explore Microneedling &rarr;</span>
+      </a>
+      <a href="/services/aesthetics/prp" style="display:block;text-decoration:none;color:inherit;background:linear-gradient(135deg,var(--cream),#F0EDE8);padding:36px 28px;border-bottom:3px solid var(--gold);transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 12px 40px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Regenerative</div>
+        <h4 style="font-family:'Playfair Display',serif;font-size:20px;font-weight:500;margin-bottom:10px;">PRP Therapy</h4>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px;">Your own concentrated growth factors accelerate tissue repair and enhance regeneration after laser treatment.</p>
+        <span style="font-size:13px;font-weight:600;color:var(--gold);letter-spacing:0.5px;">Discover PRP &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA (DARK) -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="reveal">Targeted light. <em>Precise hands.</em></h2>
+    <p class="reveal">Every wavelength selected for your skin. Every session guided by clinical experience.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold btn-lg gold-shimmer reveal">See What Light Can Do</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>
+<div class="mobile-cta-bar">
+  <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="mobile-cta-book">See What Light Can Do</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+
+<script>
+document.querySelectorAll('.las-faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.parentElement;
+    var wasActive = item.classList.contains('active');
+    document.querySelectorAll('.las-faq-item').forEach(function(i) { i.classList.remove('active'); });
+    if (!wasActive) item.classList.add('active');
+  });
+});
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

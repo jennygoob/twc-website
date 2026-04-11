@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitamin Injections San Diego | B12, NAD+, Glutathione | THE WELLNESS CO.</title>
+<meta name="description" content="18 vitamin injection options in Santee, San Diego. B12, NAD+, glutathione, MIC, amino blends, and custom stacks. Quick, effective, NP-supervised. Call (619) 444-3264.">
+<link rel="canonical" href="https://urwellness.co/services/vitamin-injections">
+<meta property="og:title" content="Vitamin Injections | B12, NAD+, Glutathione | THE WELLNESS CO.">
+<meta property="og:description" content="18 vitamin injection options including B12, NAD+, glutathione, MIC, amino blends, and custom stacks. NP-supervised in Santee, San Diego.">
+<meta property="og:url" content="https://urwellness.co/services/vitamin-injections">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+/* Vitamin Injections — stacking cards */
+/* Accordion categories */
+.vi-accordion { max-width: 900px; margin: 0 auto; }
+.vi-acc-item { border-bottom: 1px solid rgba(0,0,0,0.06); }
+.vi-acc-trigger { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; cursor: pointer; user-select: none; }
+.vi-acc-trigger:hover .vi-acc-label { color: var(--charcoal); }
+.vi-acc-label { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); transition: color 0.2s; }
+.vi-acc-count { font-size: 12px; color: var(--text-muted); margin-left: 12px; font-weight: 400; letter-spacing: 0; text-transform: none; }
+.vi-acc-icon { width: 28px; height: 28px; border: 1px solid rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; font-size: 16px; color: var(--text-muted); transition: transform 0.3s, border-color 0.3s; flex-shrink: 0; }
+.vi-acc-item.active .vi-acc-icon { transform: rotate(45deg); border-color: var(--gold); color: var(--gold); }
+.vi-acc-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.vi-acc-item.active .vi-acc-body { max-height: 600px; }
+.vi-acc-inner { padding: 0 0 24px; }
+.vi-list { list-style: none; padding: 0; margin: 0; }
+.vi-list li { display: grid; grid-template-columns: 200px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,0.03); align-items: baseline; }
+.vi-list li:last-child { border-bottom: none; }
+.vi-shot-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 500; color: var(--charcoal); }
+.vi-shot-desc { font-size: 13px; line-height: 1.6; color: var(--text-secondary); }
+/* Stack cards — featured */
+.vi-stack-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 32px; }
+.vi-stack-card { background: var(--white); padding: 28px 24px; border-bottom: 3px solid var(--gold); box-shadow: 0 2px 16px rgba(0,0,0,0.08); }
+.vi-stack-card h3 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 500; margin-bottom: 4px; }
+.vi-stack-card .vi-sub { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; font-style: italic; }
+.vi-stack-card p { font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
+/* Stacking cards */
+.vi-stack-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 860px; margin: 0 auto; }
+.vi-card { background: linear-gradient(135deg, var(--cream), #F0EDE8); padding: 36px 32px; border-bottom: 3px solid var(--gold); }
+.vi-card-tag { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+.vi-card h4 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 500; margin-bottom: 12px; color: var(--charcoal); }
+.vi-card p { font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 16px; }
+.vi-card .vi-arrow { font-size: 14px; font-weight: 600; color: var(--gold); text-decoration: none; letter-spacing: 0.5px; }
+.vi-card .vi-arrow:hover { text-decoration: underline; }
+/* CLARITY full-width dark */
+.vi-clarity { padding: 80px 0; background: linear-gradient(135deg, #1A1816, #2D2A26); position: relative; }
+.vi-clarity::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold)); }
+.vi-clarity h3 { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 500; color: var(--white); margin-bottom: 20px; line-height: 1.3; }
+.vi-clarity h3 em { color: var(--gold-light); }
+.vi-clarity p { font-size: 16px; line-height: 1.8; color: rgba(255,255,255,0.6); max-width: 700px; margin-bottom: 24px; }
+.vi-clarity .vi-arrow-light { font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; letter-spacing: 0.5px; }
+@media (max-width: 768px) {
+  .vi-list li { grid-template-columns: 1fr; gap: 2px; }
+  .vi-shot-name { font-size: 15px; }
+  .vi-stack-cards { grid-template-columns: 1fr; }
+  .vi-stack-grid { grid-template-columns: 1fr; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  "name": "Vitamin Injections",
+  "description": "18 intramuscular vitamin and nutrient injections including B12, NAD+, glutathione, MIC, amino blends, and custom stacks.",
+  "procedureType": "https://schema.org/NoninvasiveProcedure",
+  "url": "https://urwellness.co/services/vitamin-injections",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "THE WELLNESS CO.",
+    "telephone": "+1-619-444-3264",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9658 Mission Gorge Rd",
+      "addressLocality": "Santee",
+      "addressRegion": "CA",
+      "postalCode": "92071",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does a vitamin injection take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most vitamin injections take under 5 minutes. They are intramuscular shots, not IV infusions, so there is no extended sit time required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a vitamin injection and IV therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vitamin injections are quick intramuscular shots that deliver a single nutrient or small combination in under 5 minutes. IV therapy delivers larger volumes of multiple nutrients directly into the bloodstream over 30-60 minutes. Injections are ideal for targeted nutrient delivery; IVs are better for comprehensive protocols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I get vitamin injections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Frequency depends on the injection type and your goals. B12 and amino blends can be done weekly. NAD+ and glutathione are commonly scheduled weekly or biweekly. Your provider can recommend a schedule based on your lab results and symptoms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a prescription for vitamin injections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our injections are administered under NP supervision. No outside prescription is needed. Your provider will assess your suitability during your visit."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="tel:6194443264" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Walk In This Week</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs" style="margin-top: var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li>Vitamin Injections</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="position:relative;overflow:hidden;">
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="eyebrow reveal" style="animation-delay:0s;">The Drip Lab — Vitamin Injections</div>
+    <h1 class="reveal" style="animation-delay:0.1s;">15 Minutes. Walk-In Friendly. <em>20+ Options.</em></h1>
+    <p class="reveal" style="animation-delay:0.2s;">The fastest way to get a therapeutic dose of what your body needs. B12, NAD+, Glutathione, amino blends, and custom stacks — all intramuscular, all under five minutes, all NP-supervised.</p>
+    <div class="hero-ctas reveal" style="animation-delay:0.3s;">
+      <a href="#injection-menu" class="btn-primary">View the Full Menu</a>
+    </div>
+  </div>
+  <div style="position:absolute;top:0;right:0;width:50%;height:100%;pointer-events:none;overflow:hidden;z-index:0;opacity:0.3;">
+    <div style="position:absolute;top:25%;right:30%;width:2px;height:60px;background:rgba(198,169,108,0.15);overflow:hidden;">
+      <div style="width:100%;height:100%;background:linear-gradient(180deg,rgba(198,169,108,0.8),rgba(198,169,108,0.2));transform:translateY(-100%);animation:viFillBar 3s ease-in-out infinite;"></div>
+    </div>
+    <style>@keyframes viFillBar{0%{transform:translateY(-100%)}50%{transform:translateY(0)}100%{transform:translateY(-100%)}}</style>
+  </div>
+</section>
+
+<!-- INJECTION MENU -->
+<section id="injection-menu" style="padding: var(--section-pad); background: var(--white);">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">Our Injection Menu</div>
+      <h2 class="reveal">20 Injections, <em>4 Categories</em></h2>
+      <p style="font-size: 16px; color: var(--text-secondary); max-width: 650px; margin: 16px auto 0;">From single-nutrient shots to multi-compound stacks — every injection is NP-supervised and uses medical-grade compounds.</p>
+    </div>
+
+    <div class="vi-accordion">
+      <!-- B-Vitamin Tiers -->
+      <div class="vi-acc-item">
+        <div class="vi-acc-trigger">
+          <span class="vi-acc-label">B-Vitamin Tiers<span class="vi-acc-count">4 options</span></span>
+          <span class="vi-acc-icon">+</span>
+        </div>
+        <div class="vi-acc-body"><div class="vi-acc-inner">
+          <ul class="vi-list">
+            <li><span class="vi-shot-name">Vitamin B12</span><span class="vi-shot-desc">The foundation. Red blood cell production, nerve function, cellular metabolism.</span></li>
+            <li><span class="vi-shot-name">B-Complex</span><span class="vi-shot-desc">Full-spectrum B vitamins for energy metabolism, nervous system support, and adrenal function.</span></li>
+            <li><span class="vi-shot-name">Master B</span><span class="vi-shot-desc">B12 + B-Complex in a single shot. Broader coverage, stronger energy response.</span></li>
+            <li><span class="vi-shot-name">Hotshot</span><span class="vi-shot-desc">Master B + MIC + L-Carnitine. The full energy and metabolism stack in one injection.</span></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- Upgraded Formulations -->
+      <div class="vi-acc-item">
+        <div class="vi-acc-trigger">
+          <span class="vi-acc-label">Methyl &amp; Hydro Upgrades<span class="vi-acc-count">6 options</span></span>
+          <span class="vi-acc-icon">+</span>
+        </div>
+        <div class="vi-acc-body"><div class="vi-acc-inner">
+          <ul class="vi-list">
+            <li><span class="vi-shot-name">Methyl B12</span><span class="vi-shot-desc">Methylcobalamin — the bioactive form. Bypasses the conversion step standard B12 requires.</span></li>
+            <li><span class="vi-shot-name">Methyl Master B</span><span class="vi-shot-desc">Methylcobalamin + B-Complex. Premium energy tier with superior bioavailability.</span></li>
+            <li><span class="vi-shot-name">Methyl Hotshot</span><span class="vi-shot-desc">The full Hotshot stack with methylcobalamin base. Peak formulation.</span></li>
+            <li><span class="vi-shot-name">Hydro B12</span><span class="vi-shot-desc">Hydroxocobalamin — longer-lasting B12. Stays in the body longer than other forms.</span></li>
+            <li><span class="vi-shot-name">Hydro Master B</span><span class="vi-shot-desc">Hydroxocobalamin + B-Complex. Extended-release energy support.</span></li>
+            <li><span class="vi-shot-name">Hydro Hotshot</span><span class="vi-shot-desc">The full Hotshot stack with hydroxocobalamin base. Longest-lasting formulation we offer.</span></li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- Targeted Singles -->
+      <div class="vi-acc-item">
+        <div class="vi-acc-trigger">
+          <span class="vi-acc-label">Targeted Singles<span class="vi-acc-count">7 options</span></span>
+          <span class="vi-acc-icon">+</span>
+        </div>
+        <div class="vi-acc-body"><div class="vi-acc-inner">
+          <ul class="vi-list">
+            <li><span class="vi-shot-name">Glutathione</span><span class="vi-shot-desc">The body's master antioxidant. Liver detoxification, skin clarity, immune function.</span></li>
+            <li><span class="vi-shot-name">NAD+</span><span class="vi-shot-desc">Cellular energy and longevity. Mitochondrial function, cognitive clarity, and DNA repair.</span></li>
+            <li><span class="vi-shot-name">L-Carnitine</span><span class="vi-shot-desc">Fatty acid transport into mitochondria. Fat metabolism, endurance, and recovery.</span></li>
+            <li><span class="vi-shot-name">MIC</span><span class="vi-shot-desc">Methionine, inositol, choline — three lipotropic agents for fat metabolism and liver function.</span></li>
+            <li><span class="vi-shot-name">Vitamin C</span><span class="vi-shot-desc">High-dose ascorbic acid for immune function, collagen synthesis, and antioxidant protection.</span></li>
+            <li><span class="vi-shot-name">Vitamin D3</span><span class="vi-shot-desc">Immune regulation, bone density, mood, and hormonal balance.</span></li>
+            <li><span class="vi-shot-name">Magnesium</span><span class="vi-shot-desc">Muscle relaxation, nerve function, sleep quality. Involved in 300+ enzymatic reactions.</span></li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- Stacks — Featured cards -->
+    <div style="margin-top: 48px;">
+      <div class="vi-cat-label">Stacks (Multi-Compound)</div>
+      <div class="vi-stack-cards stagger-children">
+        <div class="vi-stack-card">
+          <h3>Holy Hangover</h3>
+          <p class="vi-sub">B12 + B-Complex + MIC + Vitamin C</p>
+          <p>The full recovery shot. Four compounds for dehydration, nausea, toxin overload, and metabolic reset. Our strongest single injection.</p>
+        </div>
+        <div class="vi-stack-card">
+          <h3>Get Over It</h3>
+          <p class="vi-sub">B12 + B-Complex + Vitamin C</p>
+          <p>Immune boost meets energy. Three compounds for when you feel something coming on — or need to push through what already hit.</p>
+        </div>
+        <div class="vi-stack-card">
+          <h3>Bliss Out</h3>
+          <p class="vi-sub">B12 + B-Complex + Magnesium</p>
+          <p>Calm energy. Magnesium for muscle relaxation and nervous system support, B vitamins for sustained drive without the jitter.</p>
+        </div>
+      </div>
+    </div>
+
+    <p style="text-align: center; font-size: 14px; color: var(--text-muted); margin-top: 40px;">Most injections take under 5 minutes. Walk-in friendly when availability allows.</p>
+  </div>
+</section>
+
+<!-- CLARITY CALLOUT -->
+<section class="vi-clarity">
+  <div class="container">
+    <h3>Any injection works on its own. Add CLARITY —<br><em>and your labs tell you exactly which ones you need.</em></h3>
+    <p>Most people guess which nutrients they are missing. CLARITY members do not guess. Your biomarker data identifies the exact deficiencies, and your injection protocol targets them with precision. No wasted shots. No generic stacks. Every injection matched to what your body actually needs.</p>
+    <a href="/clarity" class="vi-arrow-light">Explore the CLARITY program &rarr;</a>
+  </div>
+</section>
+
+<!-- STACKING — Beyond the Quick Shot -->
+<section style="padding: 60px 0; background: var(--white); border-top: 1px solid rgba(0,0,0,0.04);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <div class="eyebrow">When You Need More</div>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 500;">Beyond the <em>Quick Shot</em></h3>
+    </div>
+    <div class="vi-stack-grid stagger-children">
+      <div class="vi-card">
+        <div class="vi-card-tag">Full Infusion</div>
+        <h4>IV Therapy (The Drip Lab)</h4>
+        <p>When you need comprehensive nutrient delivery — 30-60 minutes, 100% bloodstream absorption, 9 medical-grade formulations including NAD+, glutathione, and custom blends.</p>
+        <a href="/services/iv-therapy" class="vi-arrow">Explore The Drip Lab &rarr;</a>
+      </div>
+      <div class="vi-card">
+        <div class="vi-card-tag">Advanced Protocols</div>
+        <h4>Peptide Therapy</h4>
+        <p>For targeted protocols that go beyond single-nutrient delivery — tissue repair, cognitive enhancement, metabolic optimization, and hormonal support at the cellular level.</p>
+        <a href="/services/peptide-therapy" class="vi-arrow">Explore Peptides &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="reveal">Frequently Asked <em>Questions</em></h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How long does a vitamin injection take?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>Most vitamin injections take under 5 minutes. They are intramuscular shots, not IV infusions, so there is no extended sit time. You can walk in, get your injection, and continue your day immediately.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>What is the difference between injections and IV therapy?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>Vitamin injections are quick intramuscular shots that deliver a single nutrient or small combination in under five minutes. IV therapy delivers larger volumes of multiple nutrients directly into the bloodstream over 30-60 minutes. Injections are ideal for targeted, quick-hit nutrient delivery. IVs are better for comprehensive, multi-nutrient protocols.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How often should I get injections?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>Frequency depends on the injection type and your individual needs. B12 and amino blends can be done weekly. NAD+ and glutathione are commonly scheduled weekly or biweekly. Your provider can recommend a cadence based on your lab results and health goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Do I need to be a CLARITY member?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>No. Vitamin injections are available to all patients as a standalone service. However, CLARITY members receive 10-20% off all injections and get recommendations informed by their actual lab results — so your injection protocol targets the nutrients your body actually needs.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FROM THE BLOG -->
+<section style="padding: 80px 0; background: var(--cream);">
+  <div class="container">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; text-align: center; margin-bottom: 48px; color: var(--charcoal);">From the <em>Blog</em></h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+      <a href="/blog/functional-medicine-vs-traditional-medicine" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">Functional Medicine vs Traditional Medicine</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">Why lab-driven nutrient protocols outperform guesswork.</p></div>
+      </a>
+      <a href="/blog/hormone-imbalance-signs-women-over-40" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">7 Signs of Hormone Imbalance in Women Over 40</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">The nutrient depletions behind unexplained fatigue and brain fog.</p></div>
+      </a>
+      <a href="/blog/birth-control-progestin-vs-progesterone" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">Progestin vs Progesterone: What Birth Control Is Actually Doing</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">The vitamin and mineral depletions that birth control causes.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="reveal">Pick your shot. <em>Feel the difference today.</em></h2>
+    <p>20 options. Under 5 minutes. Walk-in friendly.</p>
+    <a href="tel:6194443264" class="btn-gold btn-lg gold-shimmer">Call Ahead or Walk In</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+<script>
+document.querySelectorAll('.vi-acc-trigger').forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const item = trigger.closest('.vi-acc-item');
+    const wasActive = item.classList.contains('active');
+    // Close all
+    document.querySelectorAll('.vi-acc-item').forEach(i => i.classList.remove('active'));
+    // Toggle clicked
+    if (!wasActive) item.classList.add('active');
+  });
+});
+</script>
+
+<!-- Sticky Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:6194443264" class="mobile-cta-book">Walk In This Week</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://urwellness.co/sitemap.xml

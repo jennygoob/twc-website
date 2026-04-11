@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microneedling San Diego | Medical-Grade Collagen Induction | THE WELLNESS CO. Santee</title>
+  <meta name="description" content="Medical-grade microneedling in Santee, San Diego. Clinical-depth collagen induction for acne scars, fine lines, pore size, texture, and hyperpigmentation. NP-administered. Call (619) 444-3264.">
+  <link rel="canonical" href="https://urwellness.co/services/aesthetics/microneedling">
+  <meta property="og:title" content="Microneedling | THE WELLNESS CO.">
+  <meta property="og:description" content="Medical-grade microneedling with clinical-depth penetration. Collagen induction therapy for acne scars, fine lines, texture, and more in Santee, San Diego.">
+  <meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://urwellness.co/services/aesthetics/microneedling">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* mn- prefix: Microneedling page-specific styles */
+
+    .mn-hero {
+      padding: 160px 0 100px;
+      background: linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .mn-hero::before {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(198,169,108,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .mn-hero .eyebrow { color: var(--gold-light); }
+    .mn-hero h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: var(--white);
+      margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mn-hero h1 em { color: var(--gold-light); font-style: italic; }
+    .mn-hero p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    /* 3-Phase Vertical Timeline */
+    .mn-phases {
+      max-width: 700px;
+      margin: 48px auto 0;
+      position: relative;
+    }
+    .mn-phases::before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), rgba(198,169,108,0.2));
+    }
+    .mn-phase {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+      position: relative;
+    }
+    .mn-phase:last-child { margin-bottom: 0; }
+    .mn-phase-marker {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--cream);
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--gold);
+      font-weight: 600;
+      position: relative;
+      z-index: 1;
+    }
+    .mn-phase-content h3 {
+      font-size: 24px;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+    .mn-phase-tag {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: block;
+    }
+    .mn-phase-content p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+
+    /* What It Treats — flowing rows */
+    .mn-treat-row {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .mn-treat-row:first-child {
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .mn-treat-label {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--white);
+      line-height: 1.3;
+    }
+    .mn-treat-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Medical-Grade vs At-Home */
+    .mn-depth-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .mn-depth-card {
+      padding: 36px 32px;
+      border-top: 3px solid var(--gold);
+    }
+    .mn-depth-card--clinical {
+      background: var(--white);
+    }
+    .mn-depth-card--home {
+      background: var(--cream-dark);
+    }
+    .mn-depth-card h3 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+    .mn-depth-card .mn-depth-range {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .mn-depth-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 16px;
+    }
+    .mn-depth-list {
+      list-style: none;
+      padding: 0;
+    }
+    .mn-depth-list li {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      padding: 6px 0 6px 18px;
+      position: relative;
+    }
+    .mn-depth-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 5px;
+      height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    /* Build Your Collagen Protocol — stacking cards */
+    .mn-stack {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .mn-stack-card {
+      padding: 32px 28px;
+      background: rgba(255,255,255,0.05);
+      border-left: 3px solid var(--gold);
+      text-decoration: none;
+      transition: background 0.25s;
+    }
+    .mn-stack-card:hover {
+      background: rgba(255,255,255,0.08);
+    }
+    .mn-stack-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .mn-stack-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: var(--white);
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .mn-stack-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* FAQ with mn- prefix */
+    .mn-faq-item {
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+    .mn-faq-item:first-child {
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+    .mn-faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.2s;
+    }
+    .mn-faq-q:hover { color: var(--gold); }
+    .mn-faq-q h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      flex: 1;
+      padding-right: 24px;
+    }
+    .mn-faq-icon {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      border: 1.5px solid rgba(0,0,0,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+    .mn-faq-icon::before,
+    .mn-faq-icon::after {
+      content: '';
+      position: absolute;
+      background: var(--text-primary);
+      transition: transform 0.3s;
+    }
+    .mn-faq-icon::before { width: 12px; height: 2px; }
+    .mn-faq-icon::after { width: 2px; height: 12px; }
+    .mn-faq-item.active .mn-faq-icon { border-color: var(--gold); }
+    .mn-faq-item.active .mn-faq-icon::after { transform: rotate(90deg); }
+    .mn-faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .mn-faq-item.active .mn-faq-a {
+      max-height: 300px;
+    }
+    .mn-faq-a-inner {
+      padding: 0 0 24px;
+    }
+    .mn-faq-a-inner p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .mn-hero { padding: 130px 0 72px; }
+      .mn-hero h1 { font-size: 32px; }
+      .mn-hero p { font-size: 16px; }
+      .mn-phases::before { left: 20px; }
+      .mn-phase { grid-template-columns: 40px 1fr; gap: 16px; }
+      .mn-phase-marker { width: 40px; height: 40px; font-size: 16px; }
+      .mn-treat-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 20px 0;
+      }
+      .mn-depth-compare {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .mn-depth-card { padding: 28px 24px; }
+      .mn-stack {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .mn-stack-card { padding: 24px 20px; }
+    }
+  </style>
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Microneedling",
+    "description": "Medical-grade microneedling collagen induction therapy for acne scars, fine lines, pore size, texture, stretch marks, and hyperpigmentation.",
+    "provider": {
+      "@type": "MedicalClinic",
+      "name": "THE WELLNESS CO.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9658 Mission Gorge Rd",
+        "addressLocality": "Santee",
+        "addressRegion": "CA",
+        "postalCode": "92071"
+      },
+      "telephone": "+16194443264"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does microneedling hurt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Topical numbing cream is applied 20 to 30 minutes before treatment, which significantly reduces sensation. Most patients describe the feeling as a mild vibrating pressure across the skin. Comfort levels are very manageable, and your provider adjusts needle depth and speed throughout the session based on your feedback and the treatment zone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the downtime after microneedling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Expect 24 to 72 hours of mild redness, similar to a light sunburn. Some patients experience minor swelling or skin tightness for the first day. Most return to normal activities within 1 to 2 days. Avoid direct sun, active skincare ingredients (retinoids, AHAs, vitamin C serums), and heavy makeup for 48 to 72 hours post-treatment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many microneedling sessions do I need?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most patients see meaningful improvement with 3 to 6 sessions spaced 4 to 6 weeks apart. The exact number depends on your concern. Fine lines and texture may improve in 3 sessions. Deeper acne scarring or stretch marks typically require 4 to 6 sessions. Your provider will design a protocol based on your skin assessment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can PRP be combined with microneedling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. PRP (platelet-rich plasma) is one of the most effective additions to a microneedling session. After the micro-channels are created, PRP is applied topically and driven into the skin, delivering concentrated growth factors directly into the treatment zone. This combination accelerates healing and amplifies collagen production beyond what either treatment achieves alone."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Rebuild From Within</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs" style="margin-top:var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/services/aesthetics">Aesthetics</a></li>
+      <li>Microneedling</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Hero (DARK) -->
+<section class="mn-hero">
+  <div class="container">
+    <div class="eyebrow reveal" style="transition-delay:0s">Collagen Induction Therapy</div>
+    <h1 class="reveal" style="transition-delay:0.1s">1,600 Micro-Channels. <em>One Controlled Response.</em></h1>
+    <p class="reveal" style="transition-delay:0.2s">Medical-grade microneedling creates thousands of precise micro-injuries per pass, triggering a controlled wound-healing cascade that rebuilds your skin from the dermal layer up. Clinical depth. Measured results. No shortcuts.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold reveal" style="transition-delay:0.3s">Rebuild From Within</a>
+  </div>
+</section>
+
+<!-- The Controlled Injury Response (LIGHT — white) -->
+<section style="padding:var(--section-pad);background:var(--white);">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">The Science</div>
+      <h2 class="reveal">The Controlled Injury <em>Response</em></h2>
+      <p style="font-size:16px;color:var(--text-secondary);max-width:600px;margin:0 auto;line-height:1.7;">Microneedling works by harnessing your body's own repair mechanisms. Each micro-channel initiates a three-phase biological response that produces new, structurally sound collagen and elastin.</p>
+    </div>
+
+    <div class="mn-phases">
+      <div class="mn-phase">
+        <div class="mn-phase-marker">I</div>
+        <div class="mn-phase-content">
+          <h3>Penetration</h3>
+          <span class="mn-phase-tag">Immediate — Controlled Disruption</span>
+          <p>Fine needles penetrate 1.5 to 2.5mm into the dermis, creating thousands of micro-channels through the epidermis and into the deeper tissue layers. Each channel is precise enough to trigger a healing response without causing scarring. The controlled depth ensures the injury reaches the collagen-producing fibroblasts while leaving the surrounding tissue structurally intact.</p>
+        </div>
+      </div>
+      <div class="mn-phase">
+        <div class="mn-phase-marker">II</div>
+        <div class="mn-phase-content">
+          <h3>Collagen Cascade</h3>
+          <span class="mn-phase-tag">Days 1-14 — Inflammatory & Proliferative Response</span>
+          <p>The body recognizes the micro-injuries and activates its wound-healing response. Platelets aggregate, growth factors are released, and fibroblasts begin producing new collagen and elastin. This proliferative phase floods the treated area with the raw materials of skin regeneration. If PRP is applied during treatment, concentrated growth factors amplify this cascade significantly.</p>
+        </div>
+      </div>
+      <div class="mn-phase">
+        <div class="mn-phase-marker">III</div>
+        <div class="mn-phase-content">
+          <h3>Remodeling</h3>
+          <span class="mn-phase-tag">Weeks 4-12 — Structural Rebuilding</span>
+          <p>New collagen matures and reorganizes into stronger, more ordered tissue. Skin texture smooths, scars soften, pores tighten, and overall firmness improves. This remodeling phase continues for months after treatment, which is why results compound with each session and continue to develop long after the last appointment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What It Treats (DARK — charcoal gradient) -->
+<section style="padding:var(--section-pad);background:linear-gradient(175deg, #1A1816 0%, #0F0E0C 100%);color:var(--white);">
+  <div class="container" style="max-width:860px;">
+    <div class="text-center">
+      <div class="eyebrow" style="color:var(--gold-light);">Indications</div>
+      <h2 class="reveal" style="color:var(--white);margin-bottom:16px;">What It <em style="color:var(--gold-light);">Treats</em></h2>
+      <p style="font-size:16px;color:rgba(255,255,255,0.5);max-width:600px;margin:0 auto;line-height:1.7;">Microneedling addresses concerns that originate in the dermal layer — where topical products and surface treatments cannot reach.</p>
+    </div>
+
+    <div style="margin-top:48px;">
+      <div class="mn-treat-row">
+        <div class="mn-treat-label">Acne Scars</div>
+        <div class="mn-treat-desc">Breaks down scar tissue and triggers new collagen to fill pitted, rolling, and boxcar scars. Multiple sessions progressively smooth the surface as new tissue replaces damaged architecture.</div>
+      </div>
+      <div class="mn-treat-row">
+        <div class="mn-treat-label">Fine Lines</div>
+        <div class="mn-treat-desc">Stimulates collagen in the superficial dermis where early aging lines form. Repeated treatments rebuild the structural support that prevents fine lines from becoming deep wrinkles.</div>
+      </div>
+      <div class="mn-treat-row">
+        <div class="mn-treat-label">Pore Size</div>
+        <div class="mn-treat-desc">New collagen tightens the tissue around enlarged pores, reducing their visible diameter. Results are most noticeable on the nose, cheeks, and chin where pores are most prominent.</div>
+      </div>
+      <div class="mn-treat-row">
+        <div class="mn-treat-label">Uneven Texture</div>
+        <div class="mn-treat-desc">Smooths rough, bumpy, or uneven skin by promoting uniform cellular turnover and dermal remodeling across the treated area.</div>
+      </div>
+      <div class="mn-treat-row">
+        <div class="mn-treat-label">Stretch Marks</div>
+        <div class="mn-treat-desc">Penetrates through the atrophied tissue of stretch marks and initiates collagen regeneration within the damaged area. Effective on both newer and older marks.</div>
+      </div>
+      <div class="mn-treat-row">
+        <div class="mn-treat-label">Hyperpigmentation</div>
+        <div class="mn-treat-desc">Accelerates turnover of pigmented cells and normalizes melanin distribution. Works on sun damage, post-inflammatory marks, and melasma when combined with appropriate topical protocols.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Medical-Grade vs At-Home (LIGHT — cream) -->
+<section style="padding:var(--section-pad);background:var(--cream);">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow">Know the Difference</div>
+      <h2 class="reveal">Medical-Grade vs. <em>At-Home</em></h2>
+      <p style="font-size:16px;color:var(--text-secondary);max-width:600px;margin:0 auto;line-height:1.7;">Depth determines outcome. At-home rollers operate in the superficial epidermis. Clinical microneedling reaches the collagen-producing dermis where structural change actually happens.</p>
+    </div>
+
+    <div class="mn-depth-compare stagger-children">
+      <div class="mn-depth-card mn-depth-card--clinical">
+        <h3>Medical-Grade</h3>
+        <span class="mn-depth-range">1.5 — 2.5mm Penetration</span>
+        <p>Clinical-depth treatment administered by a licensed provider with real-time depth control and sterile, single-use cartridges.</p>
+        <ul class="mn-depth-list">
+          <li>Reaches the reticular dermis where fibroblasts produce collagen</li>
+          <li>Adjustable depth per treatment zone (forehead vs cheeks vs jawline)</li>
+          <li>Motorized device ensures consistent, uniform penetration</li>
+          <li>Can be combined with PRP for amplified growth factor delivery</li>
+          <li>Produces measurable structural improvement in 3-6 sessions</li>
+          <li>Treats acne scars, stretch marks, and moderate skin laxity</li>
+        </ul>
+      </div>
+      <div class="mn-depth-card mn-depth-card--home">
+        <h3>At-Home Rollers</h3>
+        <span class="mn-depth-range">0.1 — 0.25mm Penetration</span>
+        <p>Surface-level tools that create superficial disruption without reaching the dermal layer where collagen is produced.</p>
+        <ul class="mn-depth-list">
+          <li>Stays within the epidermis — no dermal stimulation</li>
+          <li>Fixed, shallow depth with no adjustment capability</li>
+          <li>Manual rolling creates inconsistent channel depth and spacing</li>
+          <li>May improve product absorption marginally</li>
+          <li>Cannot address scarring, laxity, or structural concerns</li>
+          <li>Risk of infection if needles dull or are reused without proper sterilization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stat Block (DARK — charcoal) -->
+<section class="stat-block">
+  <div class="container">
+    <div class="stat-number">10x</div>
+    <div class="stat-label">Clinical microneedling penetrates up to ten times deeper than at-home rollers — reaching the collagen-producing dermis where real structural change begins.</div>
+  </div>
+</section>
+
+<!-- Build Your Collagen Protocol (DARK — gradient) -->
+<section style="padding:var(--section-pad);background:linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%);color:var(--white);">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow" style="color:var(--gold-light);">Protocol Stacking</div>
+      <h2 class="reveal" style="color:var(--white);margin-bottom:16px;">Build Your Collagen <em style="color:var(--gold-light);">Protocol</em></h2>
+      <p style="font-size:16px;color:rgba(255,255,255,0.5);max-width:560px;margin:0 auto;line-height:1.7;">Microneedling is powerful alone — and becomes a multiplier when combined with complementary treatments that work at different layers and through different mechanisms.</p>
+    </div>
+
+    <div class="mn-stack stagger-children">
+      <a href="/services/aesthetics/prp" class="mn-stack-card">
+        <span class="mn-stack-label">Add During Treatment</span>
+        <h4>PRP Therapy</h4>
+        <p>Platelet-rich plasma applied immediately after microneedling delivers concentrated growth factors directly into open micro-channels. The deepest delivery method for your own regenerative biology.</p>
+      </a>
+      <a href="/services/aesthetics/morpheus8" class="mn-stack-card">
+        <span class="mn-stack-label">Deeper Remodeling</span>
+        <h4>Morpheus8</h4>
+        <p>Radiofrequency microneedling reaches 4mm depth — far beyond standard microneedling — for subdermal collagen remodeling and skin tightening that addresses laxity at its structural source.</p>
+      </a>
+      <a href="/services/aesthetics/chemical-peels" class="mn-stack-card">
+        <span class="mn-stack-label">Surface Refinement</span>
+        <h4>Chemical Peels</h4>
+        <p>Peels address the outermost layer that microneedling works beneath. Alternating between the two accelerates textural improvement and evens skin tone from both sides of the dermis.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CLARITY Add-On (WHITE) -->
+<section style="padding:var(--section-pad);background:var(--white);position:relative;">
+  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);"></div>
+  <div class="container" style="max-width:800px;text-align:center;">
+    <div class="eyebrow">Add CLARITY to Your Protocol</div>
+    <h2 class="reveal" style="font-size:36px;line-height:1.25;margin-bottom:16px;">Collagen production is a <em>systemic function.</em></h2>
+    <p style="font-size:16px;line-height:1.8;color:var(--text-secondary);margin-bottom:28px;">Your body's ability to produce collagen depends on hormone levels, micronutrient status, and inflammatory load. CLARITY members receive tiered discounts on all microneedling sessions, with protocols designed around their full biomarker profile.</p>
+    <a href="/clarity" style="font-size:13px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-decoration:none;">Explore CLARITY &rarr;</a>
+  </div>
+</section>
+
+<!-- FAQ (CREAM) -->
+<section style="padding:var(--section-pad);background:var(--cream);">
+  <div class="container" style="max-width:800px;">
+    <h2 class="reveal" style="font-size:36px;margin-bottom:48px;text-align:center;">Microneedling <em>FAQ</em></h2>
+
+    <div class="mn-faq-item">
+      <div class="mn-faq-q">
+        <h3>Does microneedling hurt?</h3>
+        <span class="mn-faq-icon"></span>
+      </div>
+      <div class="mn-faq-a">
+        <div class="mn-faq-a-inner">
+          <p>Topical numbing cream is applied 20 to 30 minutes before treatment, which significantly reduces sensation. Most patients describe the feeling as a mild vibrating pressure across the skin. Comfort levels are very manageable, and your provider adjusts needle depth and speed throughout the session based on your feedback and the treatment zone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mn-faq-item">
+      <div class="mn-faq-q">
+        <h3>What is the downtime?</h3>
+        <span class="mn-faq-icon"></span>
+      </div>
+      <div class="mn-faq-a">
+        <div class="mn-faq-a-inner">
+          <p>Expect 24 to 72 hours of mild redness, similar to a light sunburn. Some patients experience minor swelling or skin tightness for the first day. Most return to normal activities within 1 to 2 days. Avoid direct sun, active skincare ingredients like retinoids and AHAs, and heavy makeup for 48 to 72 hours post-treatment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mn-faq-item">
+      <div class="mn-faq-q">
+        <h3>How many sessions do I need?</h3>
+        <span class="mn-faq-icon"></span>
+      </div>
+      <div class="mn-faq-a">
+        <div class="mn-faq-a-inner">
+          <p>Most patients see meaningful improvement with 3 to 6 sessions spaced 4 to 6 weeks apart. Fine lines and texture may improve in 3 sessions. Deeper acne scarring or stretch marks typically require 4 to 6 sessions. Your provider will design a protocol based on your skin assessment and goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mn-faq-item">
+      <div class="mn-faq-q">
+        <h3>Can I combine microneedling with PRP?</h3>
+        <span class="mn-faq-icon"></span>
+      </div>
+      <div class="mn-faq-a">
+        <div class="mn-faq-a-inner">
+          <p>Yes, and it is one of the most effective combinations available. After the micro-channels are created, PRP is applied topically and driven into the skin, delivering concentrated growth factors directly into the treatment zone. This combination accelerates healing and amplifies collagen production beyond what either treatment achieves alone.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Final CTA (DARK) -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="reveal">Your skin knows how to rebuild. <em>Give it the signal.</em></h2>
+    <p class="reveal">Clinical-depth microneedling administered by experienced providers. Structural results that compound with every session.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold btn-lg gold-shimmer reveal">Rebuild From Within</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>
+<div class="mobile-cta-bar">
+  <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="mobile-cta-book">Rebuild From Within</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+
+<script>
+document.querySelectorAll('.mn-faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var item = this.parentElement;
+    var wasActive = item.classList.contains('active');
+    document.querySelectorAll('.mn-faq-item').forEach(function(i) { i.classList.remove('active'); });
+    if (!wasActive) item.classList.add('active');
+  });
+});
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

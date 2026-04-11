@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE WELLNESS CO. Santee CA | Full-Spectrum Wellness Clinic | Est. 2002</title>
+<meta name="description" content="Santee's only full-spectrum wellness clinic. Hormone optimization, SoftWave therapy, IV therapy, peptides, aesthetics. 9658 Mission Gorge Rd. Free parking. Mon-Fri 10am-6pm. Serving East County San Diego since 2002. Call (619) 444-3264.">
+<link rel="canonical" href="https://urwellness.co/locations/santee">
+<meta property="og:title" content="THE WELLNESS CO. Santee CA | Full-Spectrum Wellness Clinic">
+<meta property="og:description" content="Santee's only full-spectrum wellness clinic. Hormone optimization, SoftWave, IV therapy, peptides, aesthetics. Est. 2002. Free parking. Mon-Fri 10-6.">
+<meta property="og:url" content="https://urwellness.co/locations/santee">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "THE WELLNESS CO.",
+  "url": "https://urwellness.co",
+  "description": "Santee's full-spectrum clinical wellness and medical aesthetics practice offering hormone optimization, SoftWave therapy, IV therapy, peptide therapy, and aesthetics. Serving East County San Diego since 2002.",
+  "telephone": "+1-619-444-3264",
+  "email": "clarity@urwellness.co",
+  "image": "https://urwellness.co/images/clinic-exterior.jpg",
+  "priceRange": "$$-$$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9658 Mission Gorge Rd",
+    "addressLocality": "Santee",
+    "addressRegion": "CA",
+    "postalCode": "92071",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 32.8384,
+    "longitude": -116.9739
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "10:00",
+    "closes": "18:00"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Santee" },
+    { "@type": "City", "name": "El Cajon" },
+    { "@type": "City", "name": "Lakeside" },
+    { "@type": "City", "name": "La Mesa" },
+    { "@type": "City", "name": "San Diego" }
+  ],
+  "foundingDate": "2002",
+  "hasMap": "https://maps.google.com/?q=9658+Mission+Gorge+Rd+Santee+CA+92071"
+}
+</script>
+<style>
+/* LOC — Santee location page-specific styles */
+.loc-hero {
+  padding: 140px 0 100px;
+  background: radial-gradient(ellipse 60% 70% at 55% 45%, rgba(198,169,108,0.07) 0%, transparent 70%),
+              linear-gradient(180deg, #0F0E0C 0%, #1A1816 100%);
+  position: relative;
+}
+.loc-hero .container { position: relative; z-index: 1; }
+.loc-hero .eyebrow { color: #C6A96C; }
+.loc-hero h1 { color: #FAF8F5; font-size: 48px; line-height: 1.15; max-width: 720px; margin-bottom: 24px; }
+.loc-hero h1 em { color: #C6A96C; font-style: italic; }
+.loc-hero p { color: rgba(250,248,245,0.6); font-size: 18px; line-height: 1.8; max-width: 640px; margin-bottom: 36px; }
+
+/* Visit Us — two-column info + map */
+.loc-visit {
+  padding: 100px 0;
+  background: var(--white);
+}
+.loc-visit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+.loc-info-block {
+  margin-bottom: 32px;
+}
+.loc-info-label {
+  margin-bottom: 8px;
+  color: #C6A96C;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+.loc-info-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+.loc-info-text a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.loc-info-text a:hover { color: #C6A96C; }
+.loc-map-placeholder {
+  background: linear-gradient(135deg, #F0EBE3, #E8E2D8);
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,0.04);
+  position: relative;
+}
+.loc-map-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 39px, rgba(198,169,108,0.06) 39px, rgba(198,169,108,0.06) 40px
+  ),
+  repeating-linear-gradient(
+    90deg, transparent, transparent 39px, rgba(198,169,108,0.06) 39px, rgba(198,169,108,0.06) 40px
+  );
+}
+.loc-map-inner {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.loc-map-inner p:first-child {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.loc-map-inner p:last-child {
+  font-size: 14px;
+  color: #C6A96C;
+}
+.loc-area-served {
+  margin-top: 20px;
+  padding: 20px 24px;
+  background: var(--cream);
+  border-left: 3px solid #C6A96C;
+}
+.loc-area-served p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Services — clean row links on cream */
+.loc-services {
+  padding: 100px 0;
+  background: var(--cream);
+}
+.loc-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.loc-service-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  padding: 36px 28px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+.loc-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+}
+.loc-service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.loc-service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Since 2002 — dark section */
+.loc-legacy {
+  padding: 100px 0;
+  background: radial-gradient(ellipse 50% 60% at 50% 50%, rgba(198,169,108,0.05) 0%, transparent 70%),
+              linear-gradient(180deg, #0F0E0C 0%, #1A1816 100%);
+}
+.loc-legacy-content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.loc-legacy h2 {
+  color: #FAF8F5;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+.loc-legacy h2 em { color: #C6A96C; font-style: italic; }
+.loc-legacy p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: rgba(250,248,245,0.6);
+  margin-bottom: 20px;
+}
+
+/* Directions — light section */
+.loc-directions {
+  padding: 100px 0;
+  background: var(--white);
+}
+.loc-directions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 48px;
+}
+.loc-direction-block h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+.loc-direction-block p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+.loc-direction-block .loc-drive-time {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #C6A96C;
+}
+
+/* Final CTA — dark */
+.loc-cta {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0F0E0C 0%, #1A1816 100%);
+  text-align: center;
+}
+.loc-cta h2 {
+  color: #FAF8F5;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.loc-cta h2 em { color: #C6A96C; font-style: italic; }
+.loc-cta p {
+  font-size: 16px;
+  color: rgba(250,248,245,0.5);
+  margin-bottom: 36px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* CLARITY callout — cream */
+.loc-clarity {
+  padding: 80px 0;
+  background: var(--cream);
+}
+.loc-clarity-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.loc-clarity h2 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.loc-clarity h2 em { color: #C6A96C; font-style: italic; }
+.loc-clarity p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+  .loc-hero { padding: 120px 0 80px; }
+  .loc-hero h1 { font-size: 34px; }
+  .loc-hero p { font-size: 16px; }
+  .loc-visit-grid { grid-template-columns: 1fr; gap: 48px; }
+  .loc-services-grid { grid-template-columns: 1fr; }
+  .loc-directions-grid { grid-template-columns: 1fr; gap: 32px; }
+  .loc-legacy h2 { font-size: 30px; }
+  .loc-cta h2 { font-size: 28px; }
+  .loc-clarity h2 { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Book Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs" style="margin-top: var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/locations/santee">Locations</a></li>
+      <li>Santee</li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO — Dark cinematic -->
+<section class="loc-hero">
+  <div class="container">
+    <div class="eyebrow reveal" style="transition-delay:0s">Santee, San Diego</div>
+    <h1 class="reveal" style="transition-delay:0.1s">Santee's Only Full-Spectrum <em>Wellness Clinic.</em></h1>
+    <p class="reveal" style="transition-delay:0.2s">Over two decades of clinical wellness and medical aesthetics in the heart of East County. Hormone optimization, regenerative medicine, IV therapy, peptide protocols, and aesthetics — all under one roof, administered by experienced providers who know this community.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold reveal" style="transition-delay:0.3s">Schedule Your Visit</a>
+  </div>
+</section>
+
+<!-- VISIT US — Light section (info + map) -->
+<section class="loc-visit">
+  <div class="container">
+    <div class="loc-visit-grid">
+      <div>
+        <div class="eyebrow">Visit Us</div>
+        <h2 class="reveal" style="font-size: 36px; line-height: 1.25; margin-bottom: 36px;">Clinic <em>Information</em></h2>
+
+        <div class="loc-info-block">
+          <div class="loc-info-label">Address</div>
+          <p class="loc-info-text">9658 Mission Gorge Rd<br>Santee, CA 92071</p>
+        </div>
+
+        <div class="loc-info-block">
+          <div class="loc-info-label">Hours</div>
+          <p class="loc-info-text">Monday through Friday: 10:00 AM &ndash; 6:00 PM<br>Saturday &amp; Sunday: Closed</p>
+        </div>
+
+        <div class="loc-info-block">
+          <div class="loc-info-label">Phone</div>
+          <p class="loc-info-text"><a href="tel:6194443264">(619) 444-3264</a></p>
+        </div>
+
+        <div class="loc-info-block">
+          <div class="loc-info-label">Email</div>
+          <p class="loc-info-text"><a href="mailto:clarity@urwellness.co">clarity@urwellness.co</a></p>
+        </div>
+
+        <div class="loc-info-block" style="margin-bottom: 0;">
+          <div class="loc-info-label">Parking</div>
+          <p class="loc-info-text">Free parking in the building lot. Pull in directly off Mission Gorge Road — no meters, no garages, no hassle.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="loc-map-placeholder">
+          <div class="loc-map-inner">
+            <p>Google Maps Embed Coming Soon</p>
+            <p>9658 Mission Gorge Rd, Santee, CA 92071</p>
+          </div>
+        </div>
+        <div class="loc-area-served">
+          <p>Serving Santee, El Cajon, Lakeside, La Mesa, Alpine, Ramona, and all of East County San Diego.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE OFFER — Cream section -->
+<section class="loc-services">
+  <div class="container">
+    <div class="text-center mb-48">
+      <div class="section-label">What We Offer</div>
+      <h2 class="reveal">Everything Under <em>One Roof</em></h2>
+    </div>
+    <div class="loc-services-grid stagger-children">
+      <a href="/clarity" class="loc-service-card">
+        <h3>CLARITY Program</h3>
+        <p>Comprehensive hormone optimization membership. 40+ biomarker analysis, biological age calculation, and adaptive protocols that evolve with your body.</p>
+      </a>
+      <a href="/services/softwave-therapy" class="loc-service-card">
+        <h3>SoftWave Therapy</h3>
+        <p>FDA-cleared acoustic wave tissue regeneration for chronic pain, injury recovery, joint health, and neuropathy. Non-invasive, zero downtime.</p>
+      </a>
+      <a href="/services/iv-therapy" class="loc-service-card">
+        <h3>IV Therapy</h3>
+        <p>NAD+, Myers Cocktail, glutathione, high-dose vitamin C, and custom IV formulations administered by experienced clinical staff.</p>
+      </a>
+      <a href="/services/peptide-therapy" class="loc-service-card">
+        <h3>Peptide Therapy</h3>
+        <p>Targeted peptide stacks for recovery, immune support, longevity, and performance optimization. Provider-guided protocols.</p>
+      </a>
+      <a href="/services/aesthetics" class="loc-service-card">
+        <h3>Medical Aesthetics</h3>
+        <p>Botox, Dysport, dermal fillers, Morpheus8, chemical peels, microneedling, PRP, and laser treatments from trained aesthetic providers.</p>
+      </a>
+      <a href="/services/weight-management" class="loc-service-card">
+        <h3>Weight Management</h3>
+        <p>Medical weight management addressing the hormonal and metabolic drivers behind stubborn weight. Not a diet. A protocol.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVING SANTEE SINCE 2002 — Dark section -->
+<section class="loc-legacy">
+  <div class="container">
+    <div class="loc-legacy-content">
+      <div class="eyebrow">Est. 2002</div>
+      <h2 class="reveal">Serving Santee for <em>Over Two Decades</em></h2>
+      <p>THE WELLNESS CO. was founded right here on Mission Gorge Road by Dawn Philp, a board-certified Family Nurse Practitioner with a vision for something different: a clinic that treats the whole person, not just the symptom. What began as a single-provider practice has grown into East County San Diego's most comprehensive wellness destination.</p>
+      <p>More than twenty years later, that same provider-led philosophy defines everything we do. Every treatment plan is built by the people who administer it. Every protocol is adapted to the individual sitting across from us. This is not a franchise. It never has been.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GETTING HERE — Light section -->
+<section class="loc-directions">
+  <div class="container">
+    <div style="text-align: center;">
+      <div class="section-label">Getting Here</div>
+      <h2 class="reveal">Easy Access from <em>Every Direction</em></h2>
+    </div>
+    <div class="loc-directions-grid stagger-children">
+      <div class="loc-direction-block">
+        <h4>From Interstate 8</h4>
+        <p>Take the Mission Gorge Road exit and head north. The clinic is approximately 2 miles up on the right side. Look for the building at 9658 — free parking lot directly accessible from Mission Gorge.</p>
+        <span class="loc-drive-time">2 min from I-8</span>
+      </div>
+      <div class="loc-direction-block">
+        <h4>From Highway 67</h4>
+        <p>Exit at Mission Gorge Road and head south. The clinic is on the left within a mile. Easy access whether you are coming from Lakeside, Poway, or Ramona.</p>
+        <span class="loc-drive-time">1 min from Hwy 67</span>
+      </div>
+      <div class="loc-direction-block">
+        <h4>From Mission Gorge Road</h4>
+        <p>If you are already on Mission Gorge, the clinic sits between Highway 67 and I-8. Centrally located in Santee with direct street-level access and free lot parking on site.</p>
+        <span class="loc-drive-time">Free lot parking</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLARITY CALLOUT — Cream section -->
+<section class="loc-clarity">
+  <div class="container">
+    <div class="loc-clarity-inner">
+      <div class="eyebrow">CLARITY Membership</div>
+      <h2 class="reveal">The Optimization Program <em>Built Here</em></h2>
+      <p>CLARITY was developed at this clinic — analyzing 40+ biomarkers, calculating your biological age, and building adaptive protocols that evolve with your labs. All consultations, blood draws, and provider reviews happen in person at our Santee location.</p>
+      <a href="/clarity" class="btn-gold" style="margin-top: 4px;">Explore CLARITY</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE + CONDITION CROSS-LINKS -->
+<section style="padding: 56px 0; background: var(--cream, #FAF8F5);">
+  <div class="container" style="text-align: center;">
+    <div style="font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;">Under One Roof</div>
+    <h3 class="reveal" style="color: var(--charcoal, #1A1816); font-size: 22px; margin-bottom: 28px; font-weight: 400;">Services & Conditions We Treat</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 800px; margin: 0 auto;">
+      <a href="/services/softwave-therapy" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">SoftWave Therapy</a>
+      <a href="/services/iv-therapy" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">IV Therapy</a>
+      <a href="/services/peptide-therapy" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Peptide Therapy</a>
+      <a href="/services/aesthetics/botox" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Botox & Dysport</a>
+      <a href="/services/weight-management" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Weight Management</a>
+      <a href="/conditions/hormone-imbalance" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Hormone Imbalance</a>
+      <a href="/conditions/fatigue" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Chronic Fatigue</a>
+      <a href="/conditions/chronic-pain" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Chronic Pain</a>
+      <a href="/conditions/menopause" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Menopause</a>
+      <a href="/conditions/low-testosterone" style="font-size: 13px; font-weight: 500; color: var(--text-secondary, #666); text-decoration: none; padding: 7px 18px; border: 1px solid rgba(198,169,108,0.25); border-radius: 24px; transition: all 0.3s;">Low Testosterone</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA — Dark section, ONE gold button only -->
+<section class="loc-cta">
+  <div class="container">
+    <h2 class="reveal">Your Clinic Is <em>Right Here</em></h2>
+    <p class="reveal">Walk in, sit down, and let twenty years of clinical expertise meet you where you are.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold gold-shimmer reveal">Schedule Your Visit</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>
+<div class="mobile-cta-bar">
+  <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="mobile-cta-book">Book Consultation</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

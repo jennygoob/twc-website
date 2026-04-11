@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Wellness Co. Club | $349/mo VIP Membership | San Diego Wellness Santee</title>
+<meta name="description" content="The Wellness Co. Club: $349/month VIP membership. Pick 1 premium service (IV, Botox, SoftWave, or DermaPen) + 1 add-on every month. VIP events, 10% off everything, birthday gift. Call (619) 444-3264.">
+<link rel="canonical" href="https://urwellness.co/club">
+<meta property="og:title" content="The Wellness Co. Club | VIP Monthly Membership">
+<meta property="og:description" content="$349/month. Pick 1 premium service + 1 add-on every month. VIP events with Dawn, 10% off everything, birthday gift. Santee, San Diego.">
+<meta property="og:url" content="https://urwellness.co/club">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+/* Club page — page-specific */
+.club-premium-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.club-addon-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.club-perks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.club-card {
+  background: var(--white);
+  border: 1px solid rgba(198,169,108,0.15);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.club-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+.club-card-value {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 6px;
+}
+.club-card h4 {
+  font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 500;
+  color: var(--charcoal); margin-bottom: 10px;
+}
+.club-card p {
+  font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin: 0;
+}
+.club-perk-card {
+  background: linear-gradient(135deg, var(--cream), #F0EDE8);
+  padding: 32px 28px;
+  border-bottom: 3px solid var(--gold);
+}
+.club-perk-card h4 {
+  font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 500;
+  color: var(--charcoal); margin-bottom: 10px;
+}
+.club-perk-card p {
+  font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin: 0;
+}
+.club-price-badge {
+  display: inline-block; background: linear-gradient(135deg, #1A1816, #2D2A26);
+  color: var(--gold-light); font-family: 'Playfair Display', serif;
+  font-size: 48px; font-weight: 600; padding: 20px 40px;
+  border: 1px solid rgba(198,169,108,0.2); margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+.club-price-sub {
+  font-size: 14px; color: var(--text-secondary); font-weight: 400; letter-spacing: 0;
+}
+.club-how-step {
+  display: flex; gap: 20px; align-items: flex-start; margin-bottom: 32px;
+}
+.club-step-num {
+  flex-shrink: 0; width: 40px; height: 40px; background: var(--gold);
+  color: var(--white); font-family: 'Playfair Display', serif; font-size: 18px;
+  font-weight: 600; display: flex; align-items: center; justify-content: center;
+}
+.club-step-text h4 {
+  font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 500;
+  color: var(--charcoal); margin-bottom: 4px;
+}
+.club-step-text p {
+  font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin: 0;
+}
+@media (max-width: 768px) {
+  .club-premium-grid { grid-template-columns: 1fr 1fr; }
+  .club-addon-grid { grid-template-columns: 1fr 1fr; }
+  .club-perks-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .club-premium-grid { grid-template-columns: 1fr; }
+  .club-addon-grid { grid-template-columns: 1fr; }
+  .club-price-badge { font-size: 36px; padding: 16px 28px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "The Wellness Co. Club",
+  "description": "VIP monthly wellness membership. Pick 1 premium service and 1 add-on each month, plus VIP events, 10% off all services, and birthday gift.",
+  "url": "https://urwellness.co/club",
+  "offers": {
+    "@type": "Offer",
+    "price": "349",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "THE WELLNESS CO.",
+    "telephone": "+1-619-444-3264",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9658 Mission Gorge Rd",
+      "addressLocality": "Santee",
+      "addressRegion": "CA",
+      "postalCode": "92071",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is The Wellness Co. Club?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A $349/month VIP membership that gives you 1 premium service plus 1 add-on every month, VIP events with our NP Dawn, 10% off all other services, pre-sale access, and a birthday gift."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change my premium service and add-on each month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Each month you pick 1 premium service and 1 add-on from the menu. You can choose different options every month based on what you need."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between the Club and CLARITY?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Wellness Co. Club is a monthly service membership for treatments like IV therapy, Botox, SoftWave, and DermaPen. CLARITY is our data-driven hormone optimization program with lab work, diagnostics, and provider-guided protocols. Club members can also unlock CLARITY membership."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a contract or commitment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No long-term contract. The Club is a month-to-month membership. You can cancel anytime."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="tel:6194443264" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Call to Join</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs" style="margin-top: var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li>The Wellness Co. Club</li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO -->
+<section style="padding: var(--section-pad); background: var(--cream);">
+  <div class="container" style="max-width: 800px; text-align: center;">
+    <div class="section-label">VIP Membership</div>
+    <h1 class="reveal" style="font-family: 'Playfair Display', serif; font-size: clamp(32px, 5vw, 48px); font-weight: 500; color: var(--charcoal); margin-bottom: 20px; line-height: 1.2;">
+      The Wellness Co. <em>Club</em>
+    </h1>
+    <p style="font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto 32px; line-height: 1.7;">
+      One premium treatment. One add-on. Every month. Plus VIP events, member pricing, and a birthday on us.
+    </p>
+    <div class="club-price-badge">$349<span class="club-price-sub"> /month</span></div>
+    <p style="font-size: 13px; color: var(--text-muted); margin-top: 8px;">Month-to-month. No contracts.</p>
+  </div>
+</section>
+
+<!-- PICK YOUR PREMIUM -->
+<section style="padding: var(--section-pad); background: var(--white);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-label">Step 1</div>
+      <h2 class="reveal">Pick 1 <em>premium</em> service each month</h2>
+      <p style="font-size: 15px; color: var(--text-secondary); max-width: 560px; margin: 12px auto 0;">Choose a different one every month, or stick with your favorite. Your call.</p>
+    </div>
+    <div class="club-premium-grid">
+      <div class="club-card">
+        <div class="club-card-value">Up to $399 value</div>
+        <h4>IV Myers&rsquo; Cocktail</h4>
+        <p>Medical-grade infusion for energy, immunity, and recovery. 100% absorption, NP-supervised.</p>
+      </div>
+      <div class="club-card">
+        <div class="club-card-value">Up to $240 value</div>
+        <h4>Botox &mdash; 1 Area</h4>
+        <p>Smooth fine lines and wrinkles in your target area. Licensed providers, natural-looking results.</p>
+      </div>
+      <div class="club-card">
+        <div class="club-card-value">Up to $300 value</div>
+        <h4>SoftWave &mdash; 1 Area</h4>
+        <p>Shockwave therapy for pain, inflammation, and tissue regeneration. No downtime.</p>
+      </div>
+      <div class="club-card">
+        <div class="club-card-value">Up to $399 value</div>
+        <h4>DermaPen</h4>
+        <p>Microneedling for collagen production, texture refinement, and skin rejuvenation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PICK YOUR ADD-ON -->
+<section style="padding: var(--section-pad); background: var(--cream);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-label">Step 2</div>
+      <h2 class="reveal">Pick 1 <em>add-on</em> each month</h2>
+      <p style="font-size: 15px; color: var(--text-secondary); max-width: 560px; margin: 12px auto 0;">Layer in recovery, energy, or imaging between your premium treatments.</p>
+    </div>
+    <div class="club-addon-grid">
+      <div class="club-card" style="background: var(--cream);">
+        <div class="club-card-value">$128 value</div>
+        <h4>8 B12 Shots</h4>
+        <p>Twice per week all month. Sustained energy, metabolism support, and neural function.</p>
+      </div>
+      <div class="club-card" style="background: var(--cream);">
+        <div class="club-card-value">$150 value</div>
+        <h4>Thermography Scan</h4>
+        <p>Full-body thermal imaging. Map inflammation, asymmetry, and circulation patterns.</p>
+      </div>
+      <div class="club-card" style="background: var(--cream);">
+        <div class="club-card-value">$120 value</div>
+        <h4>Red Light Therapy &times;4</h4>
+        <p>Twice per week. Cellular repair, collagen stimulation, and recovery enhancement.</p>
+      </div>
+      <div class="club-card" style="background: var(--cream);">
+        <div class="club-card-value">$100 value</div>
+        <h4>Sauna + Shake Plate &times;4</h4>
+        <p>Once per week. Infrared detox paired with whole-body vibration for circulation and lymphatic drainage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIP PERKS -->
+<section style="padding: var(--section-pad); background: var(--white);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-label">Member Perks</div>
+      <h2 class="reveal">More than a <em>membership</em></h2>
+    </div>
+    <div class="club-perks-grid">
+      <div class="club-perk-card">
+        <h4>Monthly VIP Event</h4>
+        <p>Exclusive members-only gatherings with Dawn &mdash; cooking, nutrition, lifestyle, and wellness deep dives.</p>
+      </div>
+      <div class="club-perk-card">
+        <h4>10% Off Everything</h4>
+        <p>All other services and retail items. Every visit, every time, stacked on top of your included treatments.</p>
+      </div>
+      <div class="club-perk-card">
+        <h4>Pre-Sale Access</h4>
+        <p>First dibs on seasonal blowouts, flash sales, and limited-time offers before they go public.</p>
+      </div>
+      <div class="club-perk-card">
+        <h4>Birthday Gift</h4>
+        <p>A complimentary service or product on your birthday month. Because you should feel celebrated.</p>
+      </div>
+      <div class="club-perk-card">
+        <h4>CLARITY Eligible</h4>
+        <p>Club members unlock the ability to join CLARITY &mdash; our data-driven hormone optimization program with labs, diagnostics, and NP-guided protocols.</p>
+      </div>
+      <div class="club-perk-card">
+        <h4>No Contracts</h4>
+        <p>Month-to-month membership. Stay because you want to, not because you have to. Cancel anytime.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section style="padding: var(--section-pad); background: linear-gradient(135deg, #1A1816, #2D2A26);">
+  <div class="container" style="max-width: 640px;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-label" style="color: var(--gold-light);">How It Works</div>
+      <h2 class="reveal" style="color: var(--white);">Three steps. <em>Every month.</em></h2>
+    </div>
+    <div class="club-how-step">
+      <div class="club-step-num">1</div>
+      <div class="club-step-text">
+        <h4 style="color: var(--white);">Pick your premium</h4>
+        <p style="color: rgba(255,255,255,0.6);">Choose from IV Myers' Cocktail, Botox (1 area), SoftWave (1 area), or DermaPen. Switch it up each month or keep your go-to.</p>
+      </div>
+    </div>
+    <div class="club-how-step">
+      <div class="club-step-num">2</div>
+      <div class="club-step-text">
+        <h4 style="color: var(--white);">Add your add-on</h4>
+        <p style="color: rgba(255,255,255,0.6);">Layer in B12 shots (8x/month), a thermography scan, red light therapy (4x), or sauna + shake plate sessions (4x).</p>
+      </div>
+    </div>
+    <div class="club-how-step" style="margin-bottom: 0;">
+      <div class="club-step-num">3</div>
+      <div class="club-step-text">
+        <h4 style="color: var(--white);">Show up and enjoy</h4>
+        <p style="color: rgba(255,255,255,0.6);">Book your sessions, attend VIP events, and save 10% on anything else you add. That's it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE MATH -->
+<section style="padding: var(--section-pad); background: var(--cream);">
+  <div class="container" style="max-width: 700px; text-align: center;">
+    <div class="section-label">The Math</div>
+    <h2 class="reveal">Up to <em>$527</em> in value. Every month.</h2>
+    <p style="font-size: 16px; color: var(--text-secondary); max-width: 560px; margin: 16px auto 32px; line-height: 1.7;">
+      Pick IV + B12? That's $527 in treatments for $349. Choose SoftWave + Red Light? $420 in value. Every combination saves.
+    </p>
+    <div style="display: inline-block; background: var(--white); padding: 24px 40px; border: 1px solid rgba(198,169,108,0.15);">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Your monthly savings</div>
+      <div style="font-family: 'Playfair Display', serif; font-size: 36px; color: var(--charcoal); font-weight: 600;">$51 &ndash; $178</div>
+      <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">depending on your selections</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding: var(--section-pad); background: var(--white);">
+  <div class="container" style="max-width: 720px;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-label">FAQ</div>
+      <h2 class="reveal">Common <em>questions</em></h2>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">Can I change my selections every month?</button>
+      <div class="faq-a"><p>Yes. Each month you pick 1 premium service and 1 add-on from the full menu. You can choose something different every single month.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Is there a contract or commitment?</button>
+      <div class="faq-a"><p>No. The Club is month-to-month. Stay because you love it, cancel anytime with no penalties.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What's the difference between the Club and CLARITY?</button>
+      <div class="faq-a"><p>The Club is a monthly service membership for treatments like IV therapy, Botox, SoftWave, and DermaPen. CLARITY is our data-driven hormone optimization program with lab work, diagnostics, and NP-guided protocols. Club members can also unlock eligibility for CLARITY.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Can I use my 10% discount on the same visit?</button>
+      <div class="faq-a"><p>Yes. Your included premium and add-on are already covered, and any additional services or retail purchases that day get 10% off automatically.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What are the VIP events like?</button>
+      <div class="faq-a"><p>Monthly gatherings hosted by Dawn, our Nurse Practitioner. Topics rotate between cooking demonstrations, nutrition workshops, lifestyle optimization, and wellness deep dives. Members only.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Do unused treatments roll over?</button>
+      <div class="faq-a"><p>No. Each month is use-it-or-lose-it. Your premium pick and add-on reset on your billing date, so make sure to book your sessions each cycle.</p></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="reveal">Ready to join the <em>Club?</em></h2>
+    <p>Call us to get started. Your first month of premium wellness is waiting.</p>
+    <a href="tel:6194443264" class="btn-gold btn-lg gold-shimmer">Call (619) 444-3264</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/club">The Club</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+
+<!-- Sticky Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:6194443264" class="mobile-cta-book">Call to Join</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

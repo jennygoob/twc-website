@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample CLARITY Diagnostic Report | THE WELLNESS CO.</title>
+  <meta name="description" content="See what a CLARITY Diagnostic Report looks like. 40+ biomarkers analyzed across 10 body systems with pattern detection, biological age, and personalized protocols.">
+  <link rel="canonical" href="https://urwellness.co/clarity/sample-report">
+  <meta property="og:title" content="Sample CLARITY Diagnostic Report | THE WELLNESS CO.">
+  <meta property="og:description" content="See what a CLARITY Diagnostic Report reveals: 40+ biomarkers across 10 body systems, pattern detection, biological age, and personalized protocols.">
+  <meta property="og:url" content="https://urwellness.co/clarity/sample-report">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    :root {
+      --report-dark: #1A1714;
+      --report-mid: #2A2520;
+      --report-gold: #C6A96C;
+      --report-gold-light: #D4BE8E;
+    }
+
+    .report-page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero / intro */
+    .report-hero {
+      padding: 100px 0 60px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--report-dark), #0F0E0C);
+    }
+    .report-hero .eyebrow {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--report-gold);
+      margin-bottom: 20px;
+    }
+    .report-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .report-hero h1 em {
+      color: var(--report-gold-light);
+      font-style: italic;
+    }
+    .report-hero p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.45);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .report-hero .report-badge {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 8px 20px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--report-gold);
+      border: 1px solid rgba(198,169,108,0.2);
+      border-radius: 6px;
+      background: rgba(198,169,108,0.05);
+    }
+
+    /* Report cards */
+    .report-section {
+      padding: 60px 0;
+    }
+    .report-section:nth-child(odd) {
+      background: #FDFBF7;
+    }
+    .report-section:nth-child(even) {
+      background: #fff;
+    }
+    .report-card {
+      background: var(--report-dark);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+      border: 1px solid rgba(198,169,108,0.1);
+    }
+    .report-card-header {
+      padding: 28px 32px 0;
+    }
+    .report-card-header .card-eyebrow {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--report-gold);
+      margin-bottom: 10px;
+    }
+    .report-card-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .report-card-header p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.6;
+    }
+    .report-card-body {
+      padding: 24px 32px 32px;
+    }
+
+    /* System scores grid */
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: rgba(198,169,108,0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .score-item {
+      background: rgba(255,255,255,0.02);
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .score-item .score-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.6);
+    }
+    .score-item .score-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .score-optimal { color: #7CB97C; }
+    .score-attention { color: #D4A04A; }
+    .score-critical { color: #C75B5B; }
+
+    /* Pattern cards */
+    .pattern-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: rgba(198,169,108,0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .pattern-item {
+      background: rgba(255,255,255,0.02);
+      padding: 18px 20px;
+    }
+    .pattern-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .pattern-desc {
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.5;
+    }
+    .pattern-tag {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .tag-moderate { color: #D4A04A; background: rgba(212,160,74,0.1); }
+    .tag-significant { color: #C75B5B; background: rgba(199,91,91,0.1); }
+
+    /* Bio age */
+    .bio-age-display {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 32px 0;
+    }
+    .bio-age-num {
+      text-align: center;
+    }
+    .bio-age-num .age {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 1;
+    }
+    .bio-age-num .age-label {
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 6px;
+    }
+    .bio-age-arrow {
+      font-size: 24px;
+      color: var(--report-gold);
+      opacity: 0.4;
+    }
+
+    /* Locked section */
+    .report-locked {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .report-locked-content {
+      filter: blur(6px);
+      opacity: 0.4;
+      pointer-events: none;
+      user-select: none;
+      padding: 24px;
+      background: rgba(255,255,255,0.02);
+      border-radius: 10px;
+    }
+    .report-locked-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      z-index: 2;
+    }
+    .report-locked-overlay h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .report-locked-overlay p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 16px;
+      max-width: 260px;
+      line-height: 1.5;
+    }
+    .btn-gold-sm {
+      display: inline-block;
+      padding: 10px 24px;
+      background: linear-gradient(135deg, #C6A96C, #A8904E);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: box-shadow 0.3s ease;
+    }
+    .btn-gold-sm:hover {
+      box-shadow: 0 4px 20px rgba(198,169,108,0.35);
+    }
+
+    /* Section label between cards */
+    .report-label {
+      text-align: center;
+      padding: 16px 0;
+    }
+    .report-label span {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* Fake data rows for blur */
+    .fake-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .fake-row span {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* Bottom CTA */
+    .report-cta {
+      padding: 80px 0;
+      background: linear-gradient(180deg, #0F0E0C, var(--report-dark));
+      text-align: center;
+    }
+    .report-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .report-cta h2 em {
+      color: var(--report-gold-light);
+      font-style: italic;
+    }
+    .report-cta p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 32px;
+      max-width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .report-hero h1 { font-size: 28px; }
+      .score-grid { grid-template-columns: 1fr; }
+      .bio-age-display { gap: 24px; }
+      .bio-age-num .age { font-size: 42px; }
+      .report-card-header, .report-card-body { padding-left: 20px; padding-right: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<div id="nav-placeholder"></div>
+
+<!-- Hero -->
+<section class="report-hero">
+  <div class="report-page">
+    <div class="eyebrow reveal">Sample Report</div>
+    <h1 class="reveal">This Is What Your <em>Bloodwork</em> Should Tell You.</h1>
+    <p class="reveal">A preview of the CLARITY Diagnostic Report — the document generated from your 40+ biomarker panel. Real reports are personalized to your labs, your patterns, and your biology.</p>
+    <div class="report-badge reveal">Sample Patient: Sarah M. | Age 42 | Female</div>
+  </div>
+</section>
+
+<!-- Page 1: Health Snapshot -->
+<section class="report-section">
+  <div class="report-page">
+    <div class="report-label"><span>Page 1 of 7</span></div>
+    <div class="report-card reveal">
+      <div class="report-card-header">
+        <div class="card-eyebrow">Health Snapshot</div>
+        <h3>System-by-System Assessment</h3>
+        <p>Every biomarker is scored and grouped by body system. This is the overview your PCP never generates.</p>
+      </div>
+      <div class="report-card-body">
+        <div class="score-grid">
+          <div class="score-item">
+            <span class="score-label">Thyroid</span>
+            <span class="score-value score-attention">72</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Hormones</span>
+            <span class="score-value score-critical">48</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Metabolic</span>
+            <span class="score-value score-attention">65</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Inflammation</span>
+            <span class="score-value score-critical">41</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Cardiovascular</span>
+            <span class="score-value score-optimal">88</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Liver</span>
+            <span class="score-value score-optimal">91</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Kidney</span>
+            <span class="score-value score-optimal">94</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Nutrient Status</span>
+            <span class="score-value score-attention">59</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Page 2: Patterns Detected -->
+<section class="report-section">
+  <div class="report-page">
+    <div class="report-label"><span>Page 2 of 7</span></div>
+    <div class="report-card reveal">
+      <div class="report-card-header">
+        <div class="card-eyebrow">Key Health Signals</div>
+        <h3>Patterns Your PCP Missed</h3>
+        <p>We don't just flag individual markers. We detect interconnected patterns between systems that standard care evaluates in isolation.</p>
+      </div>
+      <div class="report-card-body">
+        <div class="pattern-list">
+          <div class="pattern-item">
+            <div class="pattern-name">Estrogen-Thyroid Disruption</div>
+            <div class="pattern-desc">Low estradiol combined with suboptimal thyroid function creates a compounding fatigue pattern that mimics depression.</div>
+            <span class="pattern-tag tag-significant">Significant</span>
+          </div>
+          <div class="pattern-item">
+            <div class="pattern-name">Inflammatory Cascade</div>
+            <div class="pattern-desc">Elevated hs-CRP with Vitamin D insufficiency indicates systemic inflammation accelerating biological aging.</div>
+            <span class="pattern-tag tag-moderate">Moderate</span>
+          </div>
+          <div class="pattern-item">
+            <div class="pattern-name">Metabolic Resistance Pattern</div>
+            <div class="pattern-desc">Fasting insulin at the high end of "normal" with declining DHEA suggests early metabolic resistance.</div>
+            <span class="pattern-tag tag-moderate">Moderate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Page 3: Biological Age -->
+<section class="report-section">
+  <div class="report-page">
+    <div class="report-label"><span>Page 3 of 7</span></div>
+    <div class="report-card reveal">
+      <div class="report-card-header">
+        <div class="card-eyebrow">Your Biological Age</div>
+        <h3>Calendar Age vs. Body Age</h3>
+        <p>Based on biomarker analysis across 10 categories, we calculate how fast your body is actually aging compared to your chronological age.</p>
+      </div>
+      <div class="report-card-body">
+        <div class="bio-age-display">
+          <div class="bio-age-num">
+            <div class="age" style="color: rgba(255,255,255,0.35);">42</div>
+            <div class="age-label" style="color: rgba(255,255,255,0.25);">Calendar Age</div>
+          </div>
+          <div class="bio-age-arrow">&rarr;</div>
+          <div class="bio-age-num">
+            <div class="age" style="color: var(--report-gold-light);">51</div>
+            <div class="age-label" style="color: var(--report-gold);">Biological Age</div>
+          </div>
+        </div>
+        <div style="text-align: center; padding: 16px 24px; background: rgba(198,169,108,0.06); border-radius: 8px; border: 1px solid rgba(198,169,108,0.1);">
+          <div style="font-family: 'Playfair Display', serif; font-size: 20px; color: var(--report-gold-light); margin-bottom: 4px;">9 years recoverable</div>
+          <div style="font-size: 11px; color: rgba(255,255,255,0.35);">With optimized protocols, Elite members recover ~40% and Transformation members recover ~70% of their biological age gap.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pages 4-7: LOCKED -->
+<section class="report-section">
+  <div class="report-page">
+    <div class="report-label"><span>Pages 4 - 7</span></div>
+    <div class="report-card reveal">
+      <div class="report-card-header">
+        <div class="card-eyebrow">Personalized Protocol</div>
+        <h3>Your Treatment Plan, Nutrition, and Recommendations</h3>
+        <p>The remaining pages contain your personalized medication protocol, supplement recommendations, nutrition plan, and lifestyle optimization — all calibrated to YOUR biomarkers.</p>
+      </div>
+      <div class="report-card-body">
+
+        <!-- Locked: Treatment Protocol -->
+        <div class="report-locked">
+          <div class="report-locked-content">
+            <div class="fake-row"><span>Hormone Protocol</span><span>Estradiol 0.1mg/mL cream...</span></div>
+            <div class="fake-row"><span>Thyroid Support</span><span>NP Thyroid 60mg titrated...</span></div>
+            <div class="fake-row"><span>Metabolic Support</span><span>Berberine 500mg twice daily...</span></div>
+            <div class="fake-row"><span>Supplement Stack</span><span>D3 5000IU, Mag Glycinate...</span></div>
+            <div class="fake-row"><span>Nutrition Protocol</span><span>Anti-inflammatory template with...</span></div>
+            <div class="fake-row"><span>Lifestyle Targets</span><span>Sleep optimization, HRV tracking...</span></div>
+          </div>
+          <div class="report-locked-overlay">
+            <h4>This Part Is Yours.</h4>
+            <p>Your personalized protocol is generated from your labs, your patterns, and your biology. Book a consult to get yours.</p>
+            <a href="https://book.prospyrmed.com/46924812-63ac-49e1-9dba-f22e510ae749" class="btn-gold-sm">See What Your Labs Are Hiding</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="report-cta">
+  <div class="report-page">
+    <h2 class="reveal"><span id="trust-counter" data-counter="143">0</span> people trust CLARITY.</h2>
+    <p class="reveal">Your Diagnostic Report is generated from your personal blood panel. 40+ biomarkers. 10 body systems. Zero guesswork.</p>
+    <a href="https://book.prospyrmed.com/46924812-63ac-49e1-9dba-f22e510ae749" class="btn-gold reveal">Get Your Own Diagnostic Report</a>
+    <div style="margin-top: 24px;">
+      <a href="/clarity" style="font-size: 13px; color: rgba(255,255,255,0.35); text-decoration: underline; text-underline-offset: 3px;">Learn more about CLARITY</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<script src="/js/main.js"></script>
+<script>
+(function() {
+  var el = document.getElementById('trust-counter');
+  if (!el) return;
+  var fallback = 143;
+  fetch('https://app.urwellness.co/api/clarity-count')
+    .then(function(r) { return r.json(); })
+    .then(function(d) { if (d.count && d.count > fallback) { el.setAttribute('data-counter', String(d.count)); fallback = d.count; } })
+    .catch(function() {});
+  var started = false;
+  var current = fallback;
+  function startTicking() {
+    if (started) return;
+    started = true;
+    current = parseInt(el.textContent, 10) || fallback;
+    function tick() {
+      current++;
+      el.style.transition = 'color 0.3s ease';
+      el.style.color = '#C6A96C';
+      el.textContent = current;
+      setTimeout(function() { el.style.color = ''; }, 600);
+      setTimeout(tick, 8000 + Math.random() * 7000);
+    }
+    setTimeout(tick, 5000 + Math.random() * 5000);
+  }
+  var observer = new MutationObserver(function() {
+    if (parseInt(el.textContent, 10) >= fallback) { observer.disconnect(); startTicking(); }
+  });
+  observer.observe(el, { childList: true, characterData: true, subtree: true });
+  setTimeout(function() { if (!started && parseInt(el.textContent, 10) >= fallback) startTicking(); }, 3000);
+})();
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

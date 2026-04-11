@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F0E0C"/>
+      <stop offset="100%" style="stop-color:#1A1816"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C6A96C"/>
+      <stop offset="50%" style="stop-color:#D4BC84"/>
+      <stop offset="100%" style="stop-color:#C6A96C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle gold line accent top -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#gold)" opacity="0.6"/>
+
+  <!-- Center content -->
+  <!-- Brand name -->
+  <text x="600" y="235" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" letter-spacing="6" fill="#FFFFFF">THE WELLNESS CO.</text>
+
+  <!-- Gold divider -->
+  <rect x="520" y="265" width="160" height="1.5" fill="url(#gold)" opacity="0.7"/>
+
+  <!-- Tagline -->
+  <text x="600" y="320" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-style="italic" fill="#C6A96C" letter-spacing="1">Modern Medicine. Demystified.</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" letter-spacing="3" fill="rgba(255,255,255,0.45)" text-transform="uppercase">CLINICAL WELLNESS &amp; MEDICAL AESTHETICS</text>
+
+  <!-- Location -->
+  <text x="600" y="415" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" letter-spacing="2" fill="rgba(255,255,255,0.3)">SANTEE, SAN DIEGO</text>
+
+  <!-- Bottom gold line -->
+  <rect x="0" y="628" width="1200" height="2" fill="url(#gold)" opacity="0.6"/>
+</svg>

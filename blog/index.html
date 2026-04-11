@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health & Wellness Blog | Hormone, Peptide & Functional Medicine Insights | THE WELLNESS CO.</title>
+<meta name="description" content="Expert articles on hormone optimization, peptide therapy, functional medicine, and root-cause wellness from THE WELLNESS CO. in Santee, San Diego. Call (619) 444-3264.">
+<link rel="canonical" href="https://urwellness.co/blog">
+<meta property="og:title" content="Health & Wellness Blog | THE WELLNESS CO.">
+<meta property="og:description" content="Root-cause health insights from San Diego's premier functional medicine clinic. Hormones, peptides, lab interpretation, and more.">
+<meta property="og:url" content="https://urwellness.co/blog">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "THE WELLNESS CO. Health Blog",
+  "description": "Expert articles on hormone optimization, peptide therapy, functional medicine, and root-cause wellness.",
+  "url": "https://urwellness.co/blog",
+  "publisher": {
+    "@type": "MedicalBusiness",
+    "name": "THE WELLNESS CO.",
+    "url": "https://urwellness.co",
+    "telephone": "+1-619-444-3264",
+    "address": { "@type": "PostalAddress", "streetAddress": "9658 Mission Gorge Rd", "addressLocality": "Santee", "addressRegion": "CA", "postalCode": "92071", "addressCountry": "US" }
+  }
+}
+</script>
+<style>
+.blog-hero {
+  padding: 160px 0 80px;
+  background: var(--cream);
+  position: relative;
+}
+.blog-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--white));
+  pointer-events: none;
+}
+.blog-hero h1 { font-size: 48px; line-height: 1.15; margin-bottom: 16px; }
+.blog-hero h1 em { color: var(--gold); font-style: italic; }
+.blog-hero-sub { font-size: 18px; line-height: 1.8; color: var(--text-secondary); max-width: 600px; }
+
+.blog-grid {
+  padding: 80px 0 100px;
+  background: var(--white);
+}
+.blog-categories {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.blog-cat-btn {
+  padding: 8px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(26,26,26,0.12);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.blog-cat-btn:hover, .blog-cat-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+}
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.blog-card {
+  border: 1px solid rgba(26,26,26,0.06);
+  transition: all 0.3s ease;
+}
+.blog-card:hover {
+  box-shadow: 0 8px 32px rgba(26,26,26,0.08);
+  transform: translateY(-2px);
+}
+.blog-card-img {
+  height: 220px;
+  background: linear-gradient(135deg, #0F0E0C, #2A2520);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.blog-card-img-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--gold-light);
+  font-style: italic;
+  opacity: 0.6;
+}
+.blog-card-body {
+  padding: 28px 28px 32px;
+}
+.blog-card-cat {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.blog-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+.blog-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.blog-card-title a:hover { color: var(--gold); }
+.blog-card-excerpt {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.blog-card-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+.blog-card-read {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.blog-card-read:hover { text-decoration: underline; }
+
+/* Featured post (first card spans full width) */
+.blog-card.featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog-card.featured .blog-card-img { height: 100%; min-height: 300px; }
+.blog-card.featured .blog-card-body { display: flex; flex-direction: column; justify-content: center; padding: 40px; }
+.blog-card.featured .blog-card-title { font-size: 28px; }
+
+/* CTA section */
+.blog-cta {
+  padding: 80px 0;
+  background: linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%);
+  text-align: center;
+}
+.blog-cta h2 { color: var(--white); font-size: 36px; margin-bottom: 16px; }
+.blog-cta h2 em { color: var(--gold-light); }
+.blog-cta p { font-size: 16px; color: rgba(255,255,255,0.5); margin-bottom: 36px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-hero h1 { font-size: 36px; }
+  .blog-posts { grid-template-columns: 1fr; }
+  .blog-card.featured { grid-template-columns: 1fr; }
+  .blog-card.featured .blog-card-img { height: 220px; min-height: auto; }
+}
+@media (max-width: 480px) {
+  .blog-hero { padding: 120px 0 60px; }
+  .blog-hero h1 { font-size: 30px; }
+  .blog-card-body { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col">
+            <div class="nav-mega-heading">Featured</div>
+            <a href="/services/softwave-therapy">SoftWave Therapy</a>
+            <a href="/services/iv-therapy">IV Therapy</a>
+            <a href="/services/peptide-therapy">Peptide Therapy</a>
+            <a href="/services/vitamin-injections">Vitamin Injections</a>
+          </div>
+          <div class="nav-mega-col">
+            <div class="nav-mega-heading">Aesthetics</div>
+            <a href="/services/aesthetics">All Aesthetics</a>
+            <a href="/services/aesthetics/botox">Botox & Dysport</a>
+            <a href="/services/aesthetics/morpheus8">Morpheus8</a>
+            <a href="/services/aesthetics/fillers">Dermal Fillers</a>
+          </div>
+          <div class="nav-mega-col">
+            <div class="nav-mega-heading">More</div>
+            <a href="/services/weight-management">Weight Management</a>
+            <a href="/services/body-contouring">Body Contouring</a>
+            <a href="/services">View All Services</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown">
+          <a href="/clarity">The Program</a>
+          <a href="/clarity/how-it-works">How It Works</a>
+          <a href="/clarity/for-her">For Women</a>
+          <a href="/clarity/for-him">For Men</a>
+          <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a>
+          <a href="/clarity/faq">FAQ</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/conditions">Conditions</a>
+        <div class="nav-dropdown">
+          <a href="/conditions/hormone-imbalance">Hormone Imbalance</a>
+          <a href="/conditions/low-testosterone">Low Testosterone</a>
+          <a href="/conditions/menopause">Menopause</a>
+          <a href="/conditions/fatigue">Chronic Fatigue</a>
+          <a href="/conditions/chronic-pain">Chronic Pain</a>
+          <a href="/conditions/brain-fog">Brain Fog</a>
+          <a href="/conditions">View All</a>
+        </div>
+      </div>
+      <a href="/blog" style="color: var(--gold);">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-heading" data-toggle-sub>Services</div>
+        <div class="mobile-nav-sub">
+          <a href="/services/softwave-therapy">SoftWave Therapy</a>
+          <a href="/services/iv-therapy">IV Therapy</a>
+          <a href="/services/peptide-therapy">Peptide Therapy</a>
+          <a href="/services/vitamin-injections">Vitamin Injections</a>
+          <a href="/services/aesthetics">Aesthetics</a>
+          <a href="/services/weight-management">Weight Management</a>
+          <a href="/services">View All</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-heading" data-toggle-sub>CLARITY</div>
+        <div class="mobile-nav-sub">
+          <a href="/clarity">The Program</a>
+          <a href="/clarity/how-it-works">How It Works</a>
+          <a href="/clarity/for-her">For Women</a>
+          <a href="/clarity/for-him">For Men</a>
+          <a href="/clarity/faq">FAQ</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-heading" data-toggle-sub>Conditions</div>
+        <div class="mobile-nav-sub">
+          <a href="/conditions/hormone-imbalance">Hormone Imbalance</a>
+          <a href="/conditions/low-testosterone">Low Testosterone</a>
+          <a href="/conditions/menopause">Menopause</a>
+          <a href="/conditions/fatigue">Chronic Fatigue</a>
+          <a href="/conditions/chronic-pain">Chronic Pain</a>
+          <a href="/conditions">View All</a>
+        </div>
+      </div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Book Free Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="blog-hero">
+  <div class="container">
+    <div class="eyebrow">THE WELLNESS CO. BLOG</div>
+    <h1>Root-Cause <em>Insights.</em></h1>
+    <p class="blog-hero-sub">Expert articles on hormones, peptides, lab interpretation, and the science behind how you feel. Written by our clinical team in Santee, San Diego.</p>
+  </div>
+</section>
+
+<!-- BLOG GRID -->
+<section class="blog-grid">
+  <div class="container">
+
+    <div class="blog-categories">
+      <button class="blog-cat-btn active">All</button>
+      <button class="blog-cat-btn">Hormones</button>
+      <button class="blog-cat-btn">Peptides</button>
+      <button class="blog-cat-btn">Lab Insights</button>
+      <button class="blog-cat-btn">Functional Medicine</button>
+      <button class="blog-cat-btn">For Women</button>
+      <button class="blog-cat-btn">For Men</button>
+    </div>
+
+    <div class="blog-posts">
+
+      <!-- NEW: BHRT ARTICLE -->
+      <article class="blog-card" data-category="hormones for-women for-men">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">BHRT</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; BHRT</div>
+          <h2 class="blog-card-title"><a href="/blog/bioidentical-hormone-replacement-therapy-san-diego">Bioidentical Hormone Replacement Therapy (BHRT) in San Diego: What It Is, Who It's For & How It Works</a></h2>
+          <p class="blog-card-excerpt">BHRT uses hormones molecularly identical to what your body produces — not synthetic analogs. Here's the complete guide to how it works, who it's for, and what to expect at THE WELLNESS CO.</p>
+          <a href="/blog/bioidentical-hormone-replacement-therapy-san-diego" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- FEATURED POST -->
+      <article class="blog-card featured" data-category="hormones for-women">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Hormones</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; FOR WOMEN</div>
+          <h2 class="blog-card-title"><a href="/blog/hormone-imbalance-signs-women-over-40">7 Signs of Hormone Imbalance in Women Over 40 That Get Dismissed as "Normal Aging"</a></h2>
+          <p class="blog-card-excerpt">Weight gain around the midsection. Sleep that used to be effortless now requiring melatonin. A shorter fuse than you remember having. These aren't personality changes. They're measurable hormone shifts — and they show up in bloodwork long before most doctors think to look.</p>
+          <a href="/blog/hormone-imbalance-signs-women-over-40" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 2 -->
+      <article class="blog-card" data-category="hormones for-men">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Men's Health</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; FOR MEN</div>
+          <h2 class="blog-card-title"><a href="/blog/testosterone-therapy-san-diego-what-to-expect">Testosterone Therapy in San Diego: What to Actually Expect</a></h2>
+          <p class="blog-card-excerpt">The internet is full of TRT hype and horror stories. Here's what testosterone optimization actually looks like when it's done right — from labs to protocol to what changes first.</p>
+          <a href="/blog/testosterone-therapy-san-diego-what-to-expect" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 3 -->
+      <article class="blog-card" data-category="peptides">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Peptides</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">PEPTIDE THERAPY</div>
+          <h2 class="blog-card-title"><a href="/blog/what-is-peptide-therapy-benefits-types">What Is Peptide Therapy? Benefits, Types, and Who It's For</a></h2>
+          <p class="blog-card-excerpt">Peptides are one of the most requested therapies we offer — and the most misunderstood. A clinical breakdown of what they do, how they work, and which ones matter for your goals.</p>
+          <a href="/blog/what-is-peptide-therapy-benefits-types" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 4 -->
+      <article class="blog-card" data-category="functional-medicine">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Functional Medicine</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">FUNCTIONAL MEDICINE</div>
+          <h2 class="blog-card-title"><a href="/blog/functional-medicine-vs-traditional-medicine">Functional Medicine vs. Traditional Medicine: Why Your Labs Say "Normal" but You Feel Terrible</a></h2>
+          <p class="blog-card-excerpt">Your doctor says your bloodwork is fine. But you're exhausted, gaining weight, and losing hair. The difference between "within range" and "optimal" is where the answer lives.</p>
+          <a href="/blog/functional-medicine-vs-traditional-medicine" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 5 -->
+      <article class="blog-card" data-category="hormones for-men">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">TRT Protocol</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; FOR MEN</div>
+          <h2 class="blog-card-title"><a href="/blog/why-testosterone-alone-isnt-enough">Why Testosterone Alone Isn't Enough: The Case for Optimized TRT</a></h2>
+          <p class="blog-card-excerpt">Most TRT clinics prescribe testosterone and walk away. But without managing estrogen conversion and preserving natural function, you're trading one set of symptoms for another. Here's what a complete protocol actually looks like.</p>
+          <a href="/blog/why-testosterone-alone-isnt-enough" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 6 -->
+      <article class="blog-card" data-category="hormones for-women">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Women's Hormones</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; FOR WOMEN</div>
+          <h2 class="blog-card-title"><a href="/blog/birth-control-progestin-vs-progesterone">The Birth Control Blind Spot: What ProgestIN Is Actually Doing to Your Body</a></h2>
+          <p class="blog-card-excerpt">Your pharmacy label says "progesterone." But what you're actually taking is a synthetic progestin — a molecule that binds differently, acts differently, and can make estrogen dominance worse. Here's what nobody explained.</p>
+          <a href="/blog/birth-control-progestin-vs-progesterone" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 8 -->
+      <article class="blog-card" data-category="hormones">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Younger Generation</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; ALL AGES</div>
+          <h2 class="blog-card-title"><a href="/blog/hormone-problems-younger-generations">Hormone Dysregulation Isn't Just a 40+ Problem Anymore</a></h2>
+          <p class="blog-card-excerpt">We're seeing patients in their mid-20s with hormone panels that look like they belong to someone two decades older. Birth control, environmental toxins, processed food, and sedentary lifestyles are rewriting the timeline. Here's what's actually happening.</p>
+          <a href="/blog/hormone-problems-younger-generations" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 7 -->
+      <article class="blog-card" data-category="hormones for-women">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Hormone History</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; FOR WOMEN</div>
+          <h2 class="blog-card-title"><a href="/blog/why-birth-control-says-low-dose">Why Your Birth Control Says "Low Dose" — and What That Actually Means</a></h2>
+          <p class="blog-card-excerpt">"Low dose" sounds reassuring. But it's not a safety feature — it's a correction. The original pills caused blood clots, strokes, and generational birth defects. Here's the history nobody tells you.</p>
+          <a href="/blog/why-birth-control-says-low-dose" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 9 -->
+      <article class="blog-card" data-category="hormones for-women">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Perimenopause</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; FOR WOMEN</div>
+          <h2 class="blog-card-title"><a href="/blog/perimenopause-symptoms-in-your-30s">Perimenopause Can Start in Your 30s &mdash; Here's What That Looks Like</a></h2>
+          <p class="blog-card-excerpt">Most women don't expect hormonal shifts until their late 40s. But progesterone starts declining years before estrogen does &mdash; and the symptoms show up earlier than anyone tells you.</p>
+          <a href="/blog/perimenopause-symptoms-in-your-30s" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 10 -->
+      <article class="blog-card" data-category="hormones lab-insights">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Cortisol</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">HORMONES &middot; LAB INSIGHTS</div>
+          <h2 class="blog-card-title"><a href="/blog/cortisol-weight-gain-connection">The Cortisol-Weight Connection: Why Stress Is Making You Gain Weight</a></h2>
+          <p class="blog-card-excerpt">You're eating less, exercising more, and still gaining weight around the midsection. The problem isn't willpower &mdash; it's cortisol. And it shows up in bloodwork.</p>
+          <a href="/blog/cortisol-weight-gain-connection" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 11 -->
+      <article class="blog-card" data-category="functional-medicine">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">NAD+ Therapy</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">FUNCTIONAL MEDICINE</div>
+          <h2 class="blog-card-title"><a href="/blog/nad-therapy-benefits-anti-aging">NAD+ Therapy: The Science Behind Cellular Energy, Aging, and Recovery</a></h2>
+          <p class="blog-card-excerpt">NAD+ declines 50% by age 40. That decline affects everything from DNA repair to mitochondrial function to how fast you recover. Here's what the science says &mdash; and what IV delivery actually does.</p>
+          <a href="/blog/nad-therapy-benefits-anti-aging" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+      <!-- POST 12 -->
+      <article class="blog-card" data-category="lab-insights functional-medicine">
+        <div class="blog-card-img">
+          <span class="blog-card-img-label">Lab Testing</span>
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">LAB INSIGHTS &middot; FUNCTIONAL MEDICINE</div>
+          <h2 class="blog-card-title"><a href="/blog/what-your-doctor-isnt-testing">What Your Doctor Isn't Testing &mdash; and Why It Matters More Than You Think</a></h2>
+          <p class="blog-card-excerpt">Your annual physical checks 10&ndash;15 markers. It misses 30+ that explain why you feel terrible despite "normal" results. Here's what comprehensive testing actually looks like.</p>
+          <a href="/blog/what-your-doctor-isnt-testing" class="blog-card-read">Read Article</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="blog-cta">
+  <div class="container">
+    <h2>Done Reading. Ready to <em>Know.</em></h2>
+    <p>One blood draw. 42 biomarkers. A diagnostic report built around you.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold">Book Your Free Consultation</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div><div class="footer-brand">The Wellness Co.</div><div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div></div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/46924812-63ac-49e1-9dba-f22e510ae749">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>
+<div class="mobile-cta-bar"><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="mobile-cta-book">Book Consultation</a><a href="tel:6194443264" class="mobile-cta-call">Call Now</a></div>
+<script>
+document.querySelectorAll('.blog-cat-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.blog-cat-btn').forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+    var cat = this.textContent.toLowerCase().replace(/\s+/g, '-');
+    document.querySelectorAll('.blog-card').forEach(function(card) {
+      if (cat === 'all') { card.style.display = ''; return; }
+      var cats = (card.getAttribute('data-category') || '').split(' ');
+      card.style.display = cats.indexOf(cat) > -1 ? '' : 'none';
+    });
+  });
+});
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

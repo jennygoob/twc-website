@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoftWave Therapy San Diego | FDA-Cleared Pain Relief | THE WELLNESS CO. Santee</title>
+<meta name="description" content="SoftWave tissue regeneration therapy in Santee, San Diego. FDA-cleared for chronic pain, joint recovery, neuropathy, and tissue repair. Non-invasive, no downtime. Book your session. Call (619) 444-3264.">
+<link rel="canonical" href="https://urwellness.co/services/softwave-therapy">
+<meta property="og:title" content="SoftWave Therapy | FDA-Cleared Tissue Regeneration | THE WELLNESS CO.">
+<meta property="og:description" content="Non-invasive acoustic wave technology for chronic pain, joint recovery, neuropathy, and tissue repair. Zero downtime. Book your session in Santee, San Diego.">
+<meta property="og:url" content="https://urwellness.co/services/softwave-therapy">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://urwellness.co/images/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalProcedure",
+  "name": "SoftWave Therapy",
+  "description": "FDA-cleared unfocused acoustic wave therapy for chronic pain, joint recovery, neuropathy, and tissue regeneration.",
+  "procedureType": "https://schema.org/NoninvasiveProcedure",
+  "url": "https://urwellness.co/services/softwave-therapy",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "THE WELLNESS CO.",
+    "telephone": "+1-619-444-3264",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9658 Mission Gorge Rd",
+      "addressLocality": "Santee",
+      "addressRegion": "CA",
+      "postalCode": "92071",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many SoftWave sessions do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most conditions respond well to 6-12 sessions, typically scheduled 1-2 times per week. Your provider will recommend a treatment plan based on your specific condition and severity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does SoftWave therapy hurt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most patients describe a mild tingling or pulsing sensation. The treatment is well-tolerated and requires no anesthesia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How soon will I see results from SoftWave?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients notice improvement after the first session. Full results typically develop over 4-12 weeks as tissue regeneration progresses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SoftWave therapy covered by insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SoftWave is typically not covered by insurance. We offer package pricing for multi-session treatment plans. CLARITY members receive tiered discounts of 10-20%."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between SoftWave and other acoustic wave devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SoftWave uses patented unfocused (parallel) acoustic wave technology, which treats a larger tissue volume per pulse than focused or radial devices. This broader coverage activates more stem cell migration and blood flow with fewer sessions."
+      }
+    }
+  ]
+}
+</script>
+<style>
+/* SoftWave — Page-specific styles */
+.sw-proof {
+  padding: 80px 0;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Burst — centered pulse epicenter, scroll-driven */
+.sw-burst {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 0; height: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Rings — will-change for GPU compositing */
+.sw-burst-ring {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+.sw-burst-ring:nth-child(1) {
+  width: 180px; height: 180px;
+  border: 3px solid rgba(200,195,185,0.3);
+  box-shadow: 0 0 30px rgba(200,195,185,0.1), inset 0 0 30px rgba(200,195,185,0.05);
+}
+.sw-burst-ring:nth-child(2) {
+  width: 420px; height: 420px;
+  border: 2.5px solid rgba(200,195,185,0.22);
+  box-shadow: 0 0 40px rgba(200,195,185,0.06);
+}
+.sw-burst-ring:nth-child(3) {
+  width: 720px; height: 720px;
+  border: 2px solid rgba(200,195,185,0.14);
+  box-shadow: 0 0 50px rgba(200,195,185,0.04);
+}
+.sw-burst-ring:nth-child(4) {
+  width: 1100px; height: 1100px;
+  border: 1.5px solid rgba(200,195,185,0.08);
+}
+
+/* Central glow — scroll-driven */
+.sw-burst-glow {
+  position: absolute;
+  width: 500px; height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(200,195,185,0.2) 0%,
+    rgba(200,195,185,0.08) 30%,
+    rgba(200,195,185,0.02) 55%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.sw-proof-content {
+  position: relative;
+  z-index: 1;
+}
+.sw-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.sw-proof-cell {
+  text-align: center;
+  padding: 40px;
+}
+.sw-proof-cell:first-child {
+  border-right: 1px solid rgba(26,26,26,0.12);
+}
+.sw-proof-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: var(--charcoal);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.sw-proof-unit {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.sw-proof-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+/* Healing Cascade — vertical timeline */
+.sw-cascade {
+  padding: 100px 0;
+  background: linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%);
+  position: relative;
+  overflow: hidden;
+}
+.sw-cascade::before {
+  content: '';
+  position: absolute;
+  top: 0; right: -10%;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(198,169,108,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.sw-cascade-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.sw-cascade-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  color: var(--white);
+  line-height: 1.3;
+}
+.sw-cascade-header h2 em { color: var(--gold-light); }
+
+.sw-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.sw-timeline::before {
+  content: '';
+  position: absolute;
+  left: 32px;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold) 0%, rgba(198,169,108,0.15) 100%);
+}
+.sw-phase {
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 48px;
+}
+.sw-phase:last-child { padding-bottom: 0; }
+.sw-phase-marker {
+  position: absolute;
+  left: 20px; top: 4px;
+  width: 25px; height: 25px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: #0F0E0C;
+  display: flex; align-items: center; justify-content: center;
+}
+.sw-phase-marker::after {
+  content: '';
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.sw-phase-time {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.sw-phase h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.sw-phase p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.55);
+}
+
+/* Conditions — clean two-column, no cards */
+.sw-conditions {
+  padding: var(--section-pad);
+  background: var(--white);
+}
+.sw-condition-groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(198,169,108,0.15);
+}
+.sw-condition-group {
+  padding: 40px 20px 40px 40px;
+}
+.sw-condition-group:nth-child(2) {
+  padding-left: 60px;
+  padding-right: 0;
+  border-left: 1px solid rgba(198,169,108,0.15);
+}
+.sw-condition-group h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+.sw-condition-group ul {
+  list-style: none;
+  padding: 0;
+}
+.sw-condition-group li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding: 10px 0;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.sw-condition-group li:last-child {
+  border-bottom: none;
+}
+.sw-condition-group li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 18px;
+  width: 6px; height: 1px;
+  background: var(--gold);
+}
+
+/* Differentiator — CLARITY callout with thermography */
+.sw-differentiator {
+  padding: 80px 0;
+  background: var(--cream);
+}
+.sw-diff-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+.sw-diff-copy {
+  max-width: 600px;
+}
+.sw-diff-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(198,169,108,0.08);
+  padding: 6px 14px;
+  border-left: 2px solid var(--gold);
+  margin-bottom: 20px;
+}
+.sw-diff-grid h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+.sw-diff-grid p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+/* Thermography — cinematic scan visual */
+.sw-thermo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sw-thermo-inner {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4/3.5;
+  overflow: hidden;
+  background: #0A0A0A;
+}
+.sw-thermo-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  animation: thermoPan 12s ease-in-out infinite alternate;
+}
+@keyframes thermoPan {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-1%, -1.5%) scale(1.03); }
+}
+/* Scan line — sweeps vertically */
+.sw-thermo-scanline {
+  position: absolute;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent 5%, rgba(255,255,255,0.5) 30%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.5) 70%, transparent 95%);
+  box-shadow: 0 0 20px rgba(255,255,255,0.15), 0 0 60px rgba(255,255,255,0.05);
+  animation: scanMove 5s ease-in-out infinite;
+  z-index: 2;
+}
+@keyframes scanMove {
+  0% { top: 5%; }
+  50% { top: 90%; }
+  100% { top: 5%; }
+}
+/* Dark vignette edges */
+.sw-thermo-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(10,10,10,0.7) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+/* Data overlay — clinical feel */
+.sw-thermo-data {
+  position: absolute;
+  z-index: 3;
+  font-family: 'Inter', monospace;
+}
+.sw-thermo-temp {
+  position: absolute;
+  bottom: 16px; left: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.5px;
+  z-index: 3;
+}
+.sw-thermo-badge {
+  position: absolute;
+  top: 16px; left: 16px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  z-index: 3;
+}
+/* Scan-triggered detection labels */
+.sw-thermo-detect {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  transform: translateX(8px);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sw-thermo-detect.sw-detect-visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.sw-thermo-detect.sw-detect-hidden {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+}
+.sw-detect-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 8px rgba(255,255,255,0.4);
+  flex-shrink: 0;
+}
+.sw-detect-line {
+  width: 24px; height: 1px;
+  background: rgba(255,255,255,0.3);
+  flex-shrink: 0;
+}
+.sw-detect-info {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  padding: 5px 10px;
+  border-left: 2px solid rgba(255,255,255,0.4);
+}
+.sw-detect-zone {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+.sw-detect-reading {
+  font-size: 9px;
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0;
+  margin-top: 1px;
+  white-space: nowrap;
+  font-family: 'Inter', monospace;
+}
+
+/* Session snapshot */
+/* Stack cards — adjunct treatment pairing */
+.sw-stack-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.sw-stack-card {
+  display: block;
+  padding: 36px;
+  background: linear-gradient(145deg, var(--cream) 0%, var(--white) 100%);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 2px solid var(--gold);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sw-stack-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+}
+.sw-stack-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.sw-stack-card h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 10px;
+}
+.sw-stack-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+.sw-stack-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.3px;
+}
+
+/* Session strip — dark, authoritative */
+.sw-session {
+  padding: 0;
+  background: linear-gradient(175deg, #1A1816 0%, #0F0E0C 100%);
+  position: relative;
+}
+.sw-session-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.sw-session-item {
+  padding: 48px 20px;
+  position: relative;
+}
+.sw-session-item + .sw-session-item::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 25%;
+  height: 50%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(198,169,108,0.25), transparent);
+}
+.sw-session-item h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+.sw-session-item p {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .sw-proof { padding: 60px 0; }
+  .sw-proof-grid { grid-template-columns: 1fr; }
+  .sw-proof-cell:first-child { border-right: none; border-bottom: 1px solid rgba(26,26,26,0.12); }
+  .sw-proof-cell { padding: 32px 20px; }
+  .sw-proof-number { font-size: 56px; }
+  .sw-timeline::before { left: 18px; }
+  .sw-phase { padding-left: 56px; }
+  .sw-phase-marker { left: 6px; }
+  .sw-condition-groups { grid-template-columns: 1fr; }
+  .sw-condition-group { padding: 32px 0; }
+  .sw-condition-group:nth-child(2) { padding-left: 0; border-left: none; border-top: 1px solid rgba(198,169,108,0.15); }
+  .sw-diff-layout { grid-template-columns: 1fr; }
+  .sw-thermo-inner { max-width: 280px; margin: 32px auto 0; }
+  .sw-stack-grid { grid-template-columns: 1fr; }
+  .sw-session-grid { grid-template-columns: 1fr 1fr; }
+  .sw-session-item { padding: 32px 16px; }
+  .sw-session-item h4 { font-size: 26px; }
+  .sw-cascade-header h2 { font-size: 30px; }
+}
+@media (max-width: 480px) {
+  .sw-proof-number { font-size: 52px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="container">
+    <a href="/" class="nav-logo">The Wellness Co.</a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <div class="nav-item"><a href="/services">Services</a>
+        <div class="nav-dropdown nav-mega">
+          <div class="nav-mega-col"><div class="nav-mega-heading">Featured</div><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">Aesthetics</div><a href="/services/aesthetics">All Aesthetics</a><a href="/services/aesthetics/botox">Botox & Dysport</a><a href="/services/aesthetics/morpheus8">Morpheus8</a><a href="/services/aesthetics/fillers">Dermal Fillers</a></div>
+          <div class="nav-mega-col"><div class="nav-mega-heading">More</div><a href="/services/weight-management">Weight Management</a><a href="/services/body-contouring">Body Contouring</a><a href="/services">View All Services</a></div>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/clarity">CLARITY</a>
+        <div class="nav-dropdown"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Free Consultation</a><a href="/clarity/faq">FAQ</a></div>
+      </div>
+      <div class="nav-item"><a href="/conditions">Conditions</a>
+        <div class="nav-dropdown"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions/brain-fog">Brain Fog</a><a href="/conditions">View All</a></div>
+      </div>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="tel:6194443264" class="nav-phone">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="nav-cta">Book Now</a>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Services</div><div class="mobile-nav-sub"><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/iv-therapy">IV Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/vitamin-injections">Vitamin Injections</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a><a href="/services">View All</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>CLARITY</div><div class="mobile-nav-sub"><a href="/clarity">The Program</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="/clarity/faq">FAQ</a></div></div>
+      <div class="mobile-nav-group"><div class="mobile-nav-heading" data-toggle-sub>Conditions</div><div class="mobile-nav-sub"><a href="/conditions/hormone-imbalance">Hormone Imbalance</a><a href="/conditions/low-testosterone">Low Testosterone</a><a href="/conditions/menopause">Menopause</a><a href="/conditions/fatigue">Chronic Fatigue</a><a href="/conditions/chronic-pain">Chronic Pain</a><a href="/conditions">View All</a></div></div>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
+      <a href="/about" class="mobile-nav-link">About</a>
+      <a href="/contact" class="mobile-nav-link">Contact</a>
+      <a href="tel:6194443264" class="mobile-nav-link">(619) 444-3264</a>
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold" style="display:block;text-align:center;margin-top:24px;">Am I a Candidate?</a>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs" style="margin-top: var(--nav-height);">
+  <div class="container">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li>SoftWave Therapy</li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO — Dark cinematic, empathy-first -->
+<section class="page-hero--dark" style="background: linear-gradient(175deg, #0F0E0C 0%, #1A1816 100%); padding: 140px 0 100px; position: relative; overflow: hidden;">
+  <div style="position: absolute; bottom: -20%; left: -10%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(198,169,108,0.04) 0%, transparent 70%); pointer-events: none;"></div>
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="eyebrow reveal" style="animation-delay:0s; color: var(--gold-light);">Our Signature Regenerative Treatment</div>
+    <h1 class="reveal" style="animation-delay:0.1s; color: var(--white); font-size: 52px; max-width: 740px; line-height: 1.15;">The treatment that makes<br>everything else <em style="color: var(--gold-light);">optional.</em></h1>
+    <p class="reveal" style="animation-delay:0.2s; font-size: 18px; line-height: 1.8; color: rgba(255,255,255,0.5); max-width: 620px; margin-top: 24px;">Physical therapy manages symptoms. Cortisone buys time. Surgery comes with months of recovery. SoftWave does something different — it tells your body to rebuild. FDA-cleared acoustic wave technology that activates your own stem cells and directs them to the exact site of injury. No needles. No incisions. No downtime.</p>
+    <div class="hero-ctas reveal" style="animation-delay:0.3s; margin-top: 32px;">
+      <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold btn-lg">See If You're a Candidate</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF — Two stats, one block -->
+<section class="sw-proof" id="sw-proof">
+  <!-- Burst rings — abstract pulse effect -->
+  <div class="sw-burst">
+    <div class="sw-burst-glow"></div>
+    <div class="sw-burst-ring"></div>
+    <div class="sw-burst-ring"></div>
+    <div class="sw-burst-ring"></div>
+    <div class="sw-burst-ring"></div>
+  </div>
+  <div class="container sw-proof-content">
+    <div class="sw-proof-grid stagger-children">
+      <div class="sw-proof-cell">
+        <div class="sw-proof-number">87%</div>
+        <div class="sw-proof-unit">Average Pain Reduction</div>
+        <p class="sw-proof-desc">Published clinical data across musculoskeletal and neurological conditions. Not pain management — tissue regeneration.</p>
+      </div>
+      <div class="sw-proof-cell">
+        <div class="sw-proof-number">10,000+</div>
+        <div class="sw-proof-unit">Stem Cells Per Session</div>
+        <p class="sw-proof-desc">Activated and migrating directly to your treatment area. The only acoustic wave device with FDA 510(k) clearance for this mechanism.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALING CASCADE — Dark timeline, cinematic pacing -->
+<section class="sw-cascade">
+  <div class="container">
+    <div class="sw-cascade-header">
+      <div style="font-size: 10px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px;">The Healing Cascade</div>
+      <h2 class="reveal">What happens after the <em>first pulse.</em></h2>
+    </div>
+    <div class="sw-timeline">
+      <div class="sw-phase">
+        <div class="sw-phase-marker"></div>
+        <div class="sw-phase-time">During Treatment &middot; 10-15 Minutes</div>
+        <h3>Acoustic Wave Activation</h3>
+        <p>Unfocused acoustic waves penetrate deep into tissue — far beyond what focused or radial devices reach. Your body interprets the signal as an instruction to heal. Stem cells begin mobilizing from bone marrow toward the treatment site.</p>
+      </div>
+      <div class="sw-phase">
+        <div class="sw-phase-marker"></div>
+        <div class="sw-phase-time">Hours After &middot; The Response</div>
+        <h3>Cellular Repair Begins</h3>
+        <p>Stem cells arrive at the injury. New blood vessels start forming. Inflammatory cytokines drop. Damaged tissue receives the building blocks it needs — collagen, growth factors, fresh vasculature. You walk out the door and the repair is already underway.</p>
+      </div>
+      <div class="sw-phase">
+        <div class="sw-phase-marker"></div>
+        <div class="sw-phase-time">Weeks 1-4 &middot; Remodeling</div>
+        <h3>Progressive Regeneration</h3>
+        <p>Tissue remodels itself with each session. Pain decreases as the structure strengthens — not because the signal is being blocked, but because the damage is being undone. Most patients feel meaningful improvement by session 3 or 4.</p>
+      </div>
+      <div class="sw-phase">
+        <div class="sw-phase-marker"></div>
+        <div class="sw-phase-time">Weeks 4-12 &middot; The Result</div>
+        <h3>Lasting Structural Change</h3>
+        <p>Full regeneration completes. Tendons, ligaments, and soft tissue are rebuilt — not patched. Results continue improving even after your final session because the repair cascade doesn't stop when the treatment does.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SESSION SNAPSHOT — Quick facts strip -->
+<section class="sw-session">
+  <div class="container">
+    <div class="sw-session-grid">
+      <div class="sw-session-item">
+        <h4>10-15 min</h4>
+        <p>Per session</p>
+      </div>
+      <div class="sw-session-item">
+        <h4>6-12</h4>
+        <p>Sessions typical</p>
+      </div>
+      <div class="sw-session-item">
+        <h4>Zero</h4>
+        <p>Downtime</p>
+      </div>
+      <div class="sw-session-item">
+        <h4>FDA</h4>
+        <p>510(k) cleared</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS — Grouped by category, not a flat bullet list -->
+<section class="sw-conditions">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <div class="section-label">Indications</div>
+      <h2 class="reveal">What Responds to <em>SoftWave</em></h2>
+      <p style="font-size: 16px; color: var(--text-secondary); max-width: 560px; margin: 16px auto 0;">Anywhere your body needs to rebuild tissue or reduce inflammation — rather than just manage symptoms.</p>
+    </div>
+    <div class="sw-condition-groups stagger-children">
+      <div class="sw-condition-group">
+        <h4>Joints &amp; Connective Tissue</h4>
+        <ul>
+          <li><a href="/conditions/chronic-pain" style="color: inherit; text-decoration: none;">Chronic joint pain</a> (knee, shoulder, hip, elbow)</li>
+          <li>Rotator cuff injuries</li>
+          <li>Tennis and golfer's elbow</li>
+          <li>Arthritis pain</li>
+          <li>Carpal tunnel symptoms</li>
+        </ul>
+      </div>
+      <div class="sw-condition-group">
+        <h4>Soft Tissue &amp; Nerve</h4>
+        <ul>
+          <li>Plantar fasciitis</li>
+          <li><a href="/conditions/chronic-pain" style="color: inherit; text-decoration: none;">Neuropathy</a></li>
+          <li>Soft tissue injuries</li>
+          <li>Back and neck pain</li>
+          <li>Post-surgical healing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATOR — CLARITY add-on with thermography visual -->
+<section class="sw-differentiator">
+  <div class="container">
+    <div class="sw-diff-layout">
+      <div class="sw-diff-copy">
+        <div class="sw-diff-badge">Go Deeper</div>
+        <h2 class="reveal">Add <em>CLARITY</em> to Your Recovery</h2>
+        <p>SoftWave works on its own. But add CLARITY and your provider can see the full picture — inflammatory markers, hormone levels, metabolic indicators — and target acoustic wave therapy to the systems under the most stress. Precision, not guesswork.</p>
+        <p>CLARITY members also stack adjunct treatments that compound results: BPC-157 peptides to accelerate molecular repair, anti-inflammatory IVs to reduce systemic load while tissue rebuilds, and ongoing biomarker tracking to measure what's actually changing.</p>
+        <a href="/clarity" style="display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--gold); text-decoration: none; letter-spacing: 0.5px;">Learn about CLARITY &rarr;</a>
+      </div>
+      <div class="sw-thermo">
+        <div class="sw-thermo-inner">
+          <img src="/images/thermography.jpg" alt="Thermography body scan showing inflammation zones" class="sw-thermo-img">
+          <div class="sw-thermo-scanline"></div>
+          <div class="sw-thermo-badge">Thermography &middot; Live Scan</div>
+          <div class="sw-thermo-temp">33.31&deg;C</div>
+          <!-- Detection labels — triggered by scan line position -->
+          <div class="sw-thermo-detect" data-scan-y="15" style="top: 12%; right: 8%;">
+            <div class="sw-detect-dot"></div>
+            <div class="sw-detect-line"></div>
+            <div class="sw-detect-info">
+              <div class="sw-detect-zone">Upper Abdomen</div>
+              <div class="sw-detect-reading">+2.4&deg;C elevated</div>
+            </div>
+          </div>
+          <div class="sw-thermo-detect" data-scan-y="35" style="top: 32%; left: 6%;">
+            <div class="sw-detect-dot"></div>
+            <div class="sw-detect-line"></div>
+            <div class="sw-detect-info">
+              <div class="sw-detect-zone">L. Oblique</div>
+              <div class="sw-detect-reading">Inflammation pattern</div>
+            </div>
+          </div>
+          <div class="sw-thermo-detect" data-scan-y="55" style="top: 52%; right: 6%;">
+            <div class="sw-detect-dot"></div>
+            <div class="sw-detect-line"></div>
+            <div class="sw-detect-info">
+              <div class="sw-detect-zone">Periumbilical</div>
+              <div class="sw-detect-reading">+3.1&deg;C hotspot</div>
+            </div>
+          </div>
+          <div class="sw-thermo-detect" data-scan-y="75" style="top: 72%; right: 12%;">
+            <div class="sw-detect-dot"></div>
+            <div class="sw-detect-line"></div>
+            <div class="sw-detect-info">
+              <div class="sw-detect-zone">Lower Abdomen</div>
+              <div class="sw-detect-reading">Asymmetric thermal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK — Adjunct treatments, right after CLARITY callout -->
+<section style="padding: 60px 0; background: var(--white); border-top: 1px solid rgba(0,0,0,0.04);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <div class="eyebrow">The Stack</div>
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 500;">Build Your <em>Machine.</em></h3>
+    </div>
+    <div class="sw-stack-grid">
+      <a href="/services/peptide-therapy" class="sw-stack-card">
+        <div class="sw-stack-tag">Molecular Repair</div>
+        <h4>BPC-157 Peptide Therapy</h4>
+        <p>Accelerates tissue regeneration at the cellular level. The most common SoftWave pairing — targets the same injury from a different mechanism.</p>
+        <span class="sw-stack-link">Explore Peptides &rarr;</span>
+      </a>
+      <a href="/services/iv-therapy" class="sw-stack-card">
+        <div class="sw-stack-tag">Systemic Support</div>
+        <h4>Afterburn IV</h4>
+        <p>Magnesium, B12, and Ketorolac — a direct anti-inflammatory. Reduces systemic pain and inflammation while SoftWave rebuilds tissue locally. Two vectors, one outcome.</p>
+        <span class="sw-stack-link">Explore The Drip Lab &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <h2 class="reveal">Frequently Asked <em>Questions</em></h2>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How many sessions do I need?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>Most conditions respond well to 6-12 sessions, typically scheduled 1-2 times per week. Your provider will recommend a treatment plan based on your specific condition and severity. Some acute injuries resolve faster, while chronic or degenerative conditions may benefit from extended protocols.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Does SoftWave hurt?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>Most patients describe a mild tingling or pulsing sensation during treatment. The intensity can be adjusted based on your comfort level. No anesthesia is required, and the treatment is well-tolerated across all age groups.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How soon will I see results?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>Some patients notice improvement in pain and mobility after the first session. However, SoftWave works by triggering a biological healing cascade — stem cell migration, blood vessel formation, and tissue remodeling — that develops over 4-12 weeks. Results continue to improve between sessions and after completing your treatment series.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>Is SoftWave covered by insurance?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>SoftWave is typically not covered by insurance. We offer package pricing for multi-session treatment plans. CLARITY members receive tiered discounts of 10-20% on all sessions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <h3>How is SoftWave different from other devices?</h3>
+        <div class="faq-icon"></div>
+      </div>
+      <div class="faq-answer">
+        <div class="faq-answer-inner">
+          <p>SoftWave uses patented unfocused (parallel) acoustic wave technology, which treats a larger tissue volume per pulse than focused or radial devices. This broader coverage activates more stem cell migration and blood flow with fewer sessions. It is also the only acoustic wave device with FDA 510(k) clearance for the specific claims of connective tissue activation and improved blood supply.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FROM THE BLOG -->
+<section style="padding: 80px 0; background: var(--cream);">
+  <div class="container">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 32px; text-align: center; margin-bottom: 48px; color: var(--charcoal);">From the <em>Blog</em></h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+      <a href="/blog/what-is-peptide-therapy-benefits-types" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">What Is Peptide Therapy? Benefits, Types &amp; Who It's For</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">How healing peptides like BPC-157 accelerate tissue repair alongside SoftWave.</p></div>
+      </a>
+      <a href="/blog/functional-medicine-vs-traditional-medicine" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">Functional Medicine vs Traditional Medicine</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">Why root-cause diagnosis finds what imaging and standard labs miss.</p></div>
+      </a>
+      <a href="/blog/hormone-imbalance-signs-women-over-40" style="background: var(--white); border: 1px solid rgba(26,26,26,0.06); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block;">
+        <div style="height: 160px; background: linear-gradient(135deg, #0F0E0C, #2A2520); display: flex; align-items: center; justify-content: center;"><span style="font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Blog</span></div>
+        <div style="padding: 24px;"><h3 style="font-family: 'Playfair Display', serif; font-size: 18px; line-height: 1.4; color: var(--charcoal); margin-bottom: 8px;">7 Signs of Hormone Imbalance in Women Over 40</h3><p style="font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: var(--text-secondary);">When chronic pain connects to hormonal dysfunction.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2 class="reveal">Remember life without<br>that <em>nagging pain?</em></h2>
+    <p>10-15 minutes. Zero downtime. One treatment that changes the conversation.</p>
+    <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="btn-gold btn-lg gold-shimmer">Relief in 3... 2... 1...</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div>
+      <div class="footer-brand">The Wellness Co.</div>
+      <div class="footer-address">Clinical Wellness &amp; Medical Aesthetics<br>9658 Mission Gorge Rd, Santee, CA 92071<br><a href="tel:6194443264" style="color:inherit;text-decoration:none;">(619) 444-3264</a> &middot; <a href="mailto:clarity@urwellness.co" style="color:inherit;text-decoration:none;">clarity@urwellness.co</a></div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col"><h5>Programs</h5><a href="/clarity">CLARITY Membership</a><a href="/clarity/how-it-works">How It Works</a><a href="/clarity/for-her">For Women</a><a href="/clarity/for-him">For Men</a><a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5">Book a Consultation</a></div>
+      <div class="footer-col"><h5>Services</h5><a href="/services/iv-therapy">IV Therapy</a><a href="/services/softwave-therapy">SoftWave Therapy</a><a href="/services/peptide-therapy">Peptide Therapy</a><a href="/services/aesthetics">Aesthetics</a><a href="/services/weight-management">Weight Management</a></div>
+      <div class="footer-col"><h5>Company</h5><a href="/about">About Us</a><a href="/conditions">Conditions We Treat</a><a href="/blog">Blog</a><a href="/contact">Contact</a><a href="tel:6194443264">(619) 444-3264</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+<script>
+// Scroll-driven pulse: rings breathe with scroll position
+(function() {
+  var proof = document.getElementById('sw-proof');
+  if (!proof) return;
+
+  var rings = proof.querySelectorAll('.sw-burst-ring');
+  var glow = proof.querySelector('.sw-burst-glow');
+  var ticking = false;
+
+  // Each ring has: offset (stagger), max scale, max opacity
+  var ringConfig = [
+    { offset: 0,    maxScale: 1,    maxOpacity: 0.45 },
+    { offset: 0.08, maxScale: 1,    maxOpacity: 0.35 },
+    { offset: 0.16, maxScale: 1,    maxOpacity: 0.22 },
+    { offset: 0.24, maxScale: 1,    maxOpacity: 0.12 }
+  ];
+
+  function update() {
+    ticking = false;
+    var rect = proof.getBoundingClientRect();
+    var vh = window.innerHeight;
+
+    // progress: 0 when section enters bottom of viewport, 1 when it reaches top
+    // This gives a full scroll range across the section
+    var raw = 1 - (rect.top / vh);
+    // Clamp and remap so the animation lives in the 0.2 - 1.0 range of scroll
+    var progress = Math.max(0, Math.min(1, (raw - 0.2) / 0.6));
+
+    if (progress <= 0 || raw > 1.5) {
+      // Out of view — hide everything
+      for (var i = 0; i < rings.length; i++) {
+        rings[i].style.transform = 'translate(-50%, -50%) scale(0)';
+        rings[i].style.opacity = '0';
+      }
+      if (glow) {
+        glow.style.transform = 'translate(-50%, -50%) scale(0)';
+        glow.style.opacity = '0';
+      }
+      return;
+    }
+
+    // Glow: fades in early, scales up, fades slightly at peak
+    var glowScale = progress * 1.2;
+    var glowOpacity = progress < 0.5
+      ? progress * 2       // fade in
+      : 1 - (progress - 0.5) * 0.6; // slight fade at end
+    if (glow) {
+      glow.style.transform = 'translate(-50%, -50%) scale(' + glowScale.toFixed(3) + ')';
+      glow.style.opacity = Math.max(0, Math.min(1, glowOpacity)).toFixed(3);
+    }
+
+    // Rings: staggered expansion with scroll
+    for (var i = 0; i < rings.length; i++) {
+      var cfg = ringConfig[i];
+      // Each ring starts later (offset) and expands across the remaining range
+      var ringProgress = Math.max(0, Math.min(1, (progress - cfg.offset) / (1 - cfg.offset)));
+
+      // Ease out cubic for smooth deceleration
+      var eased = 1 - Math.pow(1 - ringProgress, 3);
+
+      var scale = eased * cfg.maxScale;
+      // Opacity: ramps up in first half, holds, then gently fades
+      var opacity;
+      if (ringProgress < 0.3) {
+        opacity = (ringProgress / 0.3) * cfg.maxOpacity;
+      } else if (ringProgress < 0.7) {
+        opacity = cfg.maxOpacity;
+      } else {
+        opacity = cfg.maxOpacity * (1 - (ringProgress - 0.7) / 0.3 * 0.5);
+      }
+
+      rings[i].style.transform = 'translate(-50%, -50%) scale(' + scale.toFixed(3) + ')';
+      rings[i].style.opacity = Math.max(0, opacity).toFixed(3);
+    }
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  update(); // initial state
+})();
+
+// Thermography scan — labels appear as scan line passes over them
+(function() {
+  var detects = document.querySelectorAll('.sw-thermo-detect');
+  if (!detects.length) return;
+
+  // Scan line cycles 0% → 90% → 0% over 5s (matches CSS animation)
+  var cycleDuration = 5000; // ms, matches scanMove animation
+  var startTime = Date.now();
+
+  function getScanY() {
+    var elapsed = (Date.now() - startTime) % cycleDuration;
+    var t = elapsed / cycleDuration;
+    // Triangle wave: 0→1→0 mapped to 5%→90%
+    var raw = t < 0.5 ? t * 2 : 2 - t * 2;
+    return 5 + raw * 85; // scan range 5% to 90%
+  }
+
+  function tick() {
+    var scanY = getScanY();
+
+    detects.forEach(function(el) {
+      var triggerY = parseFloat(el.getAttribute('data-scan-y'));
+      var distance = Math.abs(scanY - triggerY);
+
+      if (distance < 8) {
+        // Scan line is near this zone — show label
+        el.classList.add('sw-detect-visible');
+        el.classList.remove('sw-detect-hidden');
+      } else if (distance > 15) {
+        // Scan line moved away — hide label
+        if (el.classList.contains('sw-detect-visible')) {
+          el.classList.remove('sw-detect-visible');
+          el.classList.add('sw-detect-hidden');
+        }
+      }
+    });
+
+    requestAnimationFrame(tick);
+  }
+
+  requestAnimationFrame(tick);
+})();
+</script>
+
+<!-- Sticky Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="https://book.prospyrmed.com/3e9f4f83-dbe5-48a1-b223-2bdb8c2ad1f5" class="mobile-cta-book">Am I a Candidate?</a>
+  <a href="tel:6194443264" class="mobile-cta-call">Call Now</a>
+</div>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
