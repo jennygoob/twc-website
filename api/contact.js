@@ -2,6 +2,16 @@ const { Resend } = require('resend');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+function esc(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -35,12 +45,12 @@ module.exports = async function handler(req, res) {
             New Website Contact Form Submission
           </h2>
           <table style="width:100%;border-collapse:collapse;margin:20px 0;">
-            <tr><td style="padding:8px 0;font-weight:600;width:120px;">Name:</td><td style="padding:8px 0;">${first_name} ${last_name}</td></tr>
-            <tr><td style="padding:8px 0;font-weight:600;">Email:</td><td style="padding:8px 0;"><a href="mailto:${email}">${email}</a></td></tr>
-            ${phone ? `<tr><td style="padding:8px 0;font-weight:600;">Phone:</td><td style="padding:8px 0;"><a href="tel:${phone.replace(/\D/g, '')}">${phone}</a></td></tr>` : ''}
+            <tr><td style="padding:8px 0;font-weight:600;width:120px;">Name:</td><td style="padding:8px 0;">${esc(first_name)} ${esc(last_name)}</td></tr>
+            <tr><td style="padding:8px 0;font-weight:600;">Email:</td><td style="padding:8px 0;"><a href="mailto:${esc(email)}">${esc(email)}</a></td></tr>
+            ${phone ? `<tr><td style="padding:8px 0;font-weight:600;">Phone:</td><td style="padding:8px 0;"><a href="tel:${phone.replace(/\D/g, '')}">${esc(phone)}</a></td></tr>` : ''}
             <tr><td style="padding:8px 0;font-weight:600;">Interest:</td><td style="padding:8px 0;">${interestMap[interest] || 'Not specified'}</td></tr>
           </table>
-          ${message ? `<div style="background:#FAF8F5;padding:16px;border-left:3px solid #C6A96C;margin:16px 0;"><strong>Message:</strong><br>${message.replace(/\n/g, '<br>')}</div>` : ''}
+          ${message ? `<div style="background:#FAF8F5;padding:16px;border-left:3px solid #C6A96C;margin:16px 0;"><strong>Message:</strong><br>${esc(message).replace(/\n/g, '<br>')}</div>` : ''}
           <p style="color:#888;font-size:12px;margin-top:24px;">Submitted from www.urwellness.co/contact</p>
         </div>
       `,
