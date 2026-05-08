@@ -312,7 +312,7 @@ nav .container {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 24px;
 }
 .nav-links a {
   font-size: 12px;
@@ -330,6 +330,7 @@ nav .container {
   color: var(--text-primary) !important;
   letter-spacing: 0.5px !important;
   text-transform: none !important;
+  white-space: nowrap;
 }
 .nav-cta {
   background: var(--charcoal) !important;
@@ -341,6 +342,20 @@ nav .container {
 }
 .nav-cta:hover {
   background: var(--charcoal-light) !important;
+}
+.nav-cta-secondary {
+  border: 1.5px solid #C6A96C !important;
+  color: #C6A96C !important;
+  padding: 10px 20px !important;
+  font-size: 11px !important;
+  letter-spacing: 1.5px !important;
+  transition: all 0.3s !important;
+  text-transform: uppercase !important;
+  margin-right: 8px !important;
+}
+.nav-cta-secondary:hover {
+  background: #C6A96C !important;
+  color: #1a1a1a !important;
 }
 
 /* --- Dropdown Navigation --- */
@@ -3213,6 +3228,94 @@ a[style*="Join the Club"] {
 .inline-cta .btn-gold {
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+/* ============================================
+   FREE LAB REVIEW CALLOUT — Second Opinion CTA
+   ============================================ */
+.lab-review-callout {
+  padding: 64px 0;
+  background: var(--cream);
+  border-top: 1px solid rgba(198,169,108,0.15);
+  border-bottom: 1px solid rgba(198,169,108,0.15);
+}
+.lab-review-callout-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 24px;
+}
+.lab-review-callout-label {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.lab-review-callout h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  line-height: 1.3;
+  color: var(--charcoal);
+  margin-bottom: 12px;
+}
+.lab-review-callout h3 em {
+  color: var(--gold);
+  font-style: italic;
+}
+.lab-review-callout p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lab-review-callout .btn-gold {
+  display: inline-block;
+}
+
+/* Blog inline lab review box */
+.blog-lab-review-box {
+  margin: 40px 0;
+  padding: 32px 36px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  text-align: left;
+}
+.blog-lab-review-box h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--charcoal);
+  margin-bottom: 8px;
+}
+.blog-lab-review-box p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+.blog-lab-review-box .btn-gold {
+  font-size: 14px;
+  padding: 12px 28px;
+}
+
+@media (max-width: 768px) {
+  .lab-review-callout { padding: 48px 0; }
+  .lab-review-callout h3 { font-size: 24px; }
+  .lab-review-callout p { font-size: 15px; }
+  .blog-lab-review-box { padding: 24px 20px; }
+  .blog-lab-review-box h4 { font-size: 18px; }
+}
+@media (max-width: 480px) {
+  .lab-review-callout h3 { font-size: 22px; }
+  .lab-review-callout p { font-size: 14px; }
 }
 
 /* Mega heading for nav */
